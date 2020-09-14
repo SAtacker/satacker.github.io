@@ -1,24 +1,55 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route} from 'react-router-dom';
+import './app.css';
+import Particles from 'react-particles-js';
+import {makeStyles} from "@material-ui/styles";
+import Timeline from './components/timeline';
+import Home from './components/home';
+
+const useStyles = makeStyles(theme=>({
+    particlesCanvas:{
+      position:"absolute",
+      opacity:0.5
+    }
+}));
 
 function App() {
+  const classes=useStyles();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Particles
+        canvasClassName={classes.particlesCanvas}
+        params={{
+          particles:{
+            number:{
+              value:45,
+              density:{
+                enable:true,
+                value_area:900
+              }
+            },
+            shape:{
+              type:"circle",
+              stroke:{
+                width:1,
+                color:"#1b262c"
+              }
+            },
+            size:{
+              value:8,
+              random:true,
+              anim:{
+                enable:false,
+                speed:10,
+                size_min:0.1,
+                sync:true
+              }
+            }
+          }
+        }}
+      />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/timeline" component={Timeline} />
     </div>
   );
 }
