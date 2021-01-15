@@ -1,6 +1,6 @@
 ---
 title: "Intro to Git"
-date: Friday 15 January 2021 02:59:33 PM IST
+date: 2021-01-15T16:52:00+05:30
 description: Don't share codes on WhatsApp and Discord, use git and github
 menu:
   sidebar:
