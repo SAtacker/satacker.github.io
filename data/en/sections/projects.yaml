@@ -1,0 +1,48 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Professional
+  filter: "professional"
+- name: Academic
+  filter: "academic"
+- name: Hobby
+  filter: "hobby"
+
+# your projects
+projects:
+- name: Imitecio
+  logo: /images/sections/projects/imitecio.png
+  role: Owner
+  timeline: "May 2020 - June 2020"
+  repo: https://github.com/SAtacker/IMITECIO # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: A game based on googles Posenet model
+  tags: ["tensorflow", "deep learning", "computer vision"]
+
+- name: Data Relay
+  logo: /images/sections/projects/data_relay.png
+  role: Owner
+  timeline: "September 2020"
+  repo: https://github.com/SAtacker/data-relay
+  #url: ""
+  summary: Simulation of multi-sensor data collection using MQTT and store a weeks data effectively using compression techniques. 
+  tags: ["mqtt", "multithreading","c","cpp"]
+
+# - name: Toha
+#   logo: /images/sections/projects/toha.png
+#   role: Owner
+#   timeline: "Jun 2019 - Present"
+#   repo: https://github.com/hossainemruz/toha
+#   summary: A Hugo theme for personal portfolio.
+#   tags: ["hobby","hugo","theme","professional"]

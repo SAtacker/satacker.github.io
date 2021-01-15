@@ -1,0 +1,41 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Munga Innovations
+    location: Nashik, India
+    # company overview
+    overview: Munga Innovations takes private contracts from companies to build sophesticated devices in embedded technologies, circuit designing and mechatronics.
+  positions:
+  - designation: Embedded Engineer
+    start: March 2020
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: June 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Design and develop algorithm for solar panel cleaning bot
+    - Design, develop a binary image classifier using Tensorflow.
+    - Lead backend team.
+
+- company:
+    name: Eyantra Robotics Competition
+    url: "https://www.e-yantra.org/eyrc"
+    location: Mumbai, India
+    overview: It is an international Robotics competition organized by IIT-B
+  positions:
+  - designation: Control Systems Engg
+    start: August 2020
+    end: March 2021
+    responsibilities:
+    - Team Leading
+    - Design a PID based attitude and position controller for Drone
+    - ROS and Gazebo Simulation tools
