@@ -1,0 +1,24 @@
+# section information
+section:
+  name: Achievements
+  id: achievements
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your achievements achievements
+achievements:
+- title: SRA Auto Sim 
+  image: /images/sections/achievements/sra.jpg
+  summary: Best PID tuning for line follower
+- title: MH-CET 2019 AIR 693
+  image: /images/sections/achievements/cet.jpg
+  summary: 99.63 Percentile in CET exam
+# - title: Graduation
+#   image: /images/sections/achievements/graduation-cap.jpg
+#   summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
+# - title: Award Winner
+#   image: /images/sections/achievements/woman-winner.jpg
+#   summary: Wined best paper award at IEE Conference 2020.

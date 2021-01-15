@@ -1,0 +1,15 @@
+# some information about you
+name: "Shreyas Atre"
+nickname: "SAtacker"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+image: "images/author/satacker.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "shreyasatre16@gmail.com"
+
+# some summary about what you do
+summary:
+  - I am a Developer
+  - I work on open-source projects
+  - I love to work with some fun projects
