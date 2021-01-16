@@ -81,6 +81,13 @@ Look more into git [patch](https://www.geeksforgeeks.org/using-patches-in-git/)
 ## Merge
 Merge Issues can be resolved easily using VScode mergetools
 
+* Merge conflicts occur when the file on github has been changed by two contributors at the same time
+* Merge conflicts must be dealt with great care, since they can remove important code/data.
+* VScode offers good Merge conflict resolving tool
+* The Git extension in vscode makes it quite easy to understand and resolve the conflict.
+![](vscode.png)
+
+
 ### More about git
 
 Git users are usually of four types
