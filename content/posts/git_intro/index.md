@@ -26,7 +26,6 @@ Don't share codes on WhatsApp and Discord, use git and github
 You might want to add your details before going further
 
 `git config --global user.name "Your Name Comes Here"`
-
 `git config --global user.email you@yourdomain.example.com`
 
 `git add .` takes snapshot in a temporary staging area called 'index' i.e from working dir to staging area
@@ -69,9 +68,18 @@ Look more into git [patch](https://www.geeksforgeeks.org/using-patches-in-git/)
 
 `git fetch --prune` deletes branches which no longer exist in remote 
 
+`git branch` list all the branches in the repository
+
+`git checkout <branch>` changes HEAD to the given branch name
+
+`git checkout -b <branch>` If branch does not exist ,it adds the branch
+
 `git branch -d <branch>` deletes branch locally
 
 `git push <remote> --delete <branch>` deletes the branch remotely
+
+## Merge
+Merge Issues can be resolved easily using VScode mergetools
 
 ### More about git
 
