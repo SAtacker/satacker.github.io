@@ -45,3 +45,4 @@ We can see what's to be committed using `git diff --cached` and a brief summary 
 ## Branches
 
 pull,push
+delete
