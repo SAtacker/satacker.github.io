@@ -1,3 +1,6 @@
 [submodule "themes/toha"]
 	path = themes/toha
 	url = https://github.com/hugo-toha/toha.git
+[submodule "content/posts/beagle_notes"]
+	path = content/posts/beagle_notes
+	url = https://github.com/SAtacker/beagle_notes.git

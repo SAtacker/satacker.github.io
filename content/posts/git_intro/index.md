@@ -26,6 +26,7 @@ Don't share codes on WhatsApp and Discord, use git and github
 You might want to add your details before going further
 
 `git config --global user.name "Your Name Comes Here"`
+
 `git config --global user.email you@yourdomain.example.com`
 
 `git add .` takes snapshot in a temporary staging area called 'index' i.e from working dir to staging area
