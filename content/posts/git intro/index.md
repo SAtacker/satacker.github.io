@@ -28,7 +28,9 @@ You might want to add your details before going further
 
 `git add .` takes snapshot in a temporary staging area called 'index' i.e from working dir to staging area
 
-Using `git commit` we can store the contents of index permanently
+Using `git commit` we can store the contents of index permanently in the local repo (usually a master branch)
+
+`git commit -a` notices only modified files
 
 ## Reverting back
 
@@ -38,4 +40,8 @@ tag, commit id
 
 Supposing we modify some files, we can update the index using `git add file_name`
 
-We can see what's to be committed using `git diff --cached` 
+We can see what's to be committed using `git diff --cached` and a brief summary with `git status`
+
+## Branches
+
+pull,push
