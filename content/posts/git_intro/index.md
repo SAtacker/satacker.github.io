@@ -68,9 +68,23 @@ Look more into git [patch](https://www.geeksforgeeks.org/using-patches-in-git/)
 
 `git fetch --prune` deletes branches which no longer exist in remote 
 
+`git branch` list all the branches in the repository
+
+`git checkout <branch>` changes HEAD to the given branch name
+
+`git checkout -b <branch>` If branch does not exist ,it adds the branch
+
 `git branch -d <branch>` deletes branch locally
 
 `git push <remote> --delete <branch>` deletes the branch remotely
+
+## Merge
+Merge Issues can be resolved easily using VScode mergetools
+* Merge conflicts occur when the file on github has been changed by two contributors at the same time
+* Merge conflicts must be dealt with great care, since they can remove important code/data.
+* VScode offers good Merge conflict resolving tool
+* The Git extension in vscode makes it quite easy to understand and resolve the conflict.
+![](vscode.png)
 
 ### More about git
 
