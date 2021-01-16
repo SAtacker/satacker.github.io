@@ -6,11 +6,36 @@ menu:
   sidebar:
     name: Git
     identifier: git
-    weight: 10
+    weight: 20
 ---
 
-Greeting! This is an introduction post. This post tests the followings:
+Don't share codes on WhatsApp and Discord, use git and github
 
-- Hero image is in the same directory as the post.
-- This post should be at top of the sidebar.
-- Post author should be the same as specified in `author.yaml` file.
+## Quick Basics
+
+`git init` to init a dir as local git repo
+
+- Workdpace
+- Staging area
+- Local Repo
+
+`git remote add origin <url>` to point local repo to remote repo
+
+You might want to add your details before going further
+
+`git config --global user.name "Your Name Comes Here"`
+`git config --global user.email you@yourdomain.example.com`
+
+`git add .` takes snapshot in a temporary staging area called 'index' i.e from working dir to staging area
+
+Using `git commit` we can store the contents of index permanently
+
+## Reverting back
+
+tag, commit id
+
+## Handling Changes
+
+Supposing we modify some files, we can update the index using `git add file_name`
+
+We can see what's to be committed using `git diff --cached` 
