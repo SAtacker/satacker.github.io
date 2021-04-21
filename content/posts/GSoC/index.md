@@ -26,7 +26,8 @@ Currently, it's the review period till May 17th. I have started looking at some 
 ### The How Section
 1. 
  * High-Level overview - Since Udev rules decide the interface name in Linux it would just be of the sort `enx78e7d1ea46da` which is essentially incorporating the MAC address of the beagle device. On windows there's just usual ICS without lowlevel configurations.
- * Low-Level Windows - A simple PowerShell script from [here](https://superuser.com/questions/470319/how-to-enable-internet-connection-sharing-using-command-line) could do it.
+ * Low-Level Windows - 
+ <!-- A simple PowerShell script from [here](https://superuser.com/questions/470319/how-to-enable-internet-connection-sharing-using-command-line) could do it. -->
  ```
  # Register the HNetCfg library (once)
 regsvr32 hnetcfg.dll
@@ -57,7 +58,8 @@ $config.EnableSharing(0)
 # Disable sharing
 $config.DisableSharing()
  ```
- * Low-Level Linux- We would look for the default ip-address of beagle devices. Get the interface name and then use iptables to set packet filter rules for ICS. The below script is from [here](https://stackoverflow.com/questions/848040/how-can-i-get-the-interface-name-index-associated-with-a-tcp-socket)
+ * Low-Level Linux- We would look for the default ip-address of beagle devices. Get the interface name and then use iptables to set packet filter rules for ICS. 
+ <!-- The below script is from [here](https://stackoverflow.com/questions/848040/how-can-i-get-the-interface-name-index-associated-with-a-tcp-socket) -->
  ```
 // look which interface contains the wanted IP.
 // When found, ifa->ifa_name contains the name of the interface (eth0, eth1, ppp0...)
