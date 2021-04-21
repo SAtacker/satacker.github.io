@@ -26,7 +26,7 @@ Currently, it's the review period till May 17th. I have started looking at some 
 ### The How Section
 1. 
  * High-Level overview - Since Udev rules decide the interface name in Linux it would just be of the sort `enx78e7d1ea46da` which is essentially incorporating the MAC address of the beagle device. On windows there's just usual ICS without lowlevel configurations.
- * Low-Level Windows - 
+ * Low-Level Windows - A simple PowerShell script could do it
  <!-- A simple PowerShell script from [here](https://superuser.com/questions/470319/how-to-enable-internet-connection-sharing-using-command-line) could do it. -->
  ```
  # Register the HNetCfg library (once)
