@@ -1,0 +1,1 @@
+(self.webpackChunkgsoc_blog=self.webpackChunkgsoc_blog||[]).push([[390],{8562:function(g){"use strict";g.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"beagle-config","name":"beagle-config","count":1,"permalink":"/blog/tags/beagle-config"}')}}]);

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Shreyas Atre Blog</title>
+        <link>https://satacker.github.io/blog</link>
+        <description>Shreyas Atre Blog</description>
+        <lastBuildDate>Tue, 08 Jun 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Hello]]></title>
+            <link>https://satacker.github.io/blog/hello-world</link>
+            <guid>hello-world</guid>
+            <pubDate>Tue, 08 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to this blog. This blog is created with Docusaurus 2 alpha.]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Pre-Coding Period]]></title>
+            <link>https://satacker.github.io/blog/pre-coding</link>
+            <guid>pre-coding</guid>
+            <pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Points to note]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Beaglebone & Linux]]></title>
+            <link>https://satacker.github.io/blog/linux_beagle</link>
+            <guid>linux_beagle</guid>
+            <pubDate>Fri, 29 Jan 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[I have made a curated content on linux and beaglebone]]></description>
+        </item>
+    </channel>
+</rss>

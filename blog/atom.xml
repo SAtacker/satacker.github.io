@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://satacker.github.io/blog</id>
+    <title>Shreyas Atre Blog</title>
+    <updated>2021-06-08T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://satacker.github.io/blog"/>
+    <subtitle>Shreyas Atre Blog</subtitle>
+    <icon>https://satacker.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Hello]]></title>
+        <id>hello-world</id>
+        <link href="https://satacker.github.io/blog/hello-world"/>
+        <updated>2021-06-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to this blog. This blog is created with Docusaurus 2 alpha.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pre-Coding Period]]></title>
+        <id>pre-coding</id>
+        <link href="https://satacker.github.io/blog/pre-coding"/>
+        <updated>2021-04-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Points to note]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Beaglebone & Linux]]></title>
+        <id>linux_beagle</id>
+        <link href="https://satacker.github.io/blog/linux_beagle"/>
+        <updated>2021-01-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I have made a curated content on linux and beaglebone]]></summary>
+    </entry>
+</feed>

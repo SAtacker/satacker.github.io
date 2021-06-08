@@ -1,0 +1,1 @@
+(self.webpackChunkgsoc_blog=self.webpackChunkgsoc_blog||[]).push([[640],{7512:function(l){"use strict";l.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"linux","name":"linux","count":1,"permalink":"/blog/tags/linux"}')}}]);
