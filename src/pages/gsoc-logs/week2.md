@@ -9,8 +9,10 @@
   * Route Table deletions using IOCTL calls
   * Option to input gateways from user
   
-* Pending :
+## Monday, 14th June
+
+* Configurations to add
   1. Wireless 
   2. SSH
-  3. CLI Args Parser
-  4. Upstream Upload and Code Review
+  3. USR Led COnfiguration
+  4. Logging
