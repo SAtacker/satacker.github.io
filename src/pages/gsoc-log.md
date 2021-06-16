@@ -9,4 +9,4 @@ Proposal on eLinux can be found [here](https://elinux.org/BeagleBoard/GSoC/2021_
 
 ## [Pre Coding](gsoc-logs/pre-coding)
 ## [Week 1](gsoc-logs/week1)
-<!-- ## [Week 2](gsoc-logs/week2) -->
+## [Week 2](gsoc-logs/week2)
