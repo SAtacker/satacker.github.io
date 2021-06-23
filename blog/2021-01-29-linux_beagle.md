@@ -12,7 +12,7 @@ tags: [beagle, linux]
 
 I have made a curated content on linux and beaglebone
 
-<!-- truncated -->
+<!-- truncate -->
 
 ## Boot
 
