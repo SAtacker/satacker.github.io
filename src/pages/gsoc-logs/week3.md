@@ -4,7 +4,7 @@
 2. Studied DBus
 3. Implemented hello world with `Connman`
 4. Cross compiled dbus
-   * Blog for the same [here](/blog/2021-06-23-dbus-crossc.md) 
+   * Blog for the same [here](/blog/dbus-crossc) 
 
 ## Tuesday, 22nd June
 
