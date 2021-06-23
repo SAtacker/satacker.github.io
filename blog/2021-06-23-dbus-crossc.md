@@ -72,7 +72,13 @@ sudo make install
 
 * DBus with Connman - [Link](https://gist.github.com/tranthamp/2721326)
 
-<script src="https://gist.github.com/tranthamp/2721326.js"></script>
+<!-- GIST -->
+
+import ReactEmbedGist from 'react-embed-gist';
+
+<ReactEmbedGist gist="tranthamp/2721326" />
+
+<!-- /GIST -->
 
 * The best way to get to know dbus is from their own tutorial [here](https://dbus.freedesktop.org/doc/dbus-tutorial.html).
 * [This](https://github.com/makercrew/dbus-sample) has done a great job of giving an overview of the API to get yourself quickly started.
