@@ -1,0 +1,1 @@
+(self.webpackChunkgsoc_blog=self.webpackChunkgsoc_blog||[]).push([[860],{7819:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"ipc","name":"ipc","count":1,"permalink":"/blog/tags/ipc"}')}}]);

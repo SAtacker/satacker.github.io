@@ -4,9 +4,16 @@
         <title>Shreyas Atre Blog</title>
         <link>https://satacker.github.io/blog</link>
         <description>Shreyas Atre Blog</description>
-        <lastBuildDate>Tue, 08 Jun 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 23 Jun 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[DBus Cross-compilation]]></title>
+            <link>https://satacker.github.io/blog/dbus-crossc</link>
+            <guid>dbus-crossc</guid>
+            <pubDate>Wed, 23 Jun 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[I have made a curated content on DBus cross-compilation on Ubuntu 20.04]]></description>
+        </item>
         <item>
             <title><![CDATA[Hello]]></title>
             <link>https://satacker.github.io/blog/hello-world</link>
