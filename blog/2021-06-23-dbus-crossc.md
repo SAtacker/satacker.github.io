@@ -74,11 +74,30 @@ sudo make install
 
 <!-- GIST -->
 
-import ReactEmbedGist from 'react-embed-gist';
+```sh
+# Connman Technology API examples: (Object Path: /net/connman/technology/<wifi/ethernet>, Interface: net.connman.Technology)
+# GetProperties
+dbus-send --system --dest=net.connman --print-reply /net/connman/technology/wifi net.connman.Technology.GetProperties
 
-<ReactEmbedGist gist="tranthamp/2721326" />
+# Scan
+dbus-send --system --dest=net.connman --print-reply /net/connman/technology/wifi net.connman.Technology.Scan
+
+# Disable/Enable wifi
+dbus-send --system --dest=net.connman --print-reply /net/connman/technology/wifi net.connman.Technology.SetProperty string:Powered variant:boolean:true
+
+# Disable/Enable ethernet
+dbus-send --system --dest=net.connman --print-reply /net/connman/technology/ethernet net.connman.Technology.SetProperty string:Powered variant:boolean:true
+
+# Connman Manager API examples: (Object Path: /, Interface: net.connman.Manager)
+dbus-send --system --dest=net.connman --print-reply / net.connman.Manager.GetProperties
+dbus-send --system --dest=net.connman --print-reply / net.connman.Manager.GetTechnologies
+dbus-send --system --dest=net.connman --print-reply / net.connman.Manager.GetServices
+
+# See: http://git.kernel.org/?p=network/connman/connman.git;a=tree;f=doc;hb=HEAD
+```
 
 <!-- /GIST -->
 
+:::info
 * The best way to get to know dbus is from their own tutorial [here](https://dbus.freedesktop.org/doc/dbus-tutorial.html).
 * [This](https://github.com/makercrew/dbus-sample) has done a great job of giving an overview of the API to get yourself quickly started.

@@ -59,7 +59,7 @@ module.exports = {
         },
         {
           title: "Follow me",
-          items:[
+          items: [
             {
               label: "LinkedIn",
               href: "https://linkedin.com/in/atreshreyas",
