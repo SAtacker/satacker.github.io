@@ -63,7 +63,7 @@ sudo make install
 * `tar xvfz dbus-1.12.20.tar.gz`
 
 ```sh
-./configure --disable-doxygen-docs --disable-xml-docs --prefix=/usr/arm-linux-gnueabi --host=arm-linux-gnueabi CC=/usr/bin/arm-linux-gnueabi-gcc-8 CXX=/usr/bin/arm-linux-gnueabi-g++-8 CFLAGS=-I/usr/arm-linux-gnueabi/include LDFLAGS=-L/usr/arm-linux-gnueabi/lib/ LIBS=-lexpat
+./configure --disable-doxygen-docs --disable-xml-docs --exec-prefix=/usr/arm-linux-gnueabi --host=arm-linux-gnueabi CC=/usr/bin/arm-linux-gnueabi-gcc-8 CXX=/usr/bin/arm-linux-gnueabi-g++-8 CFLAGS=-I/usr/arm-linux-gnueabi/include LDFLAGS=-L/usr/arm-linux-gnueabi/lib/ LIBS=-lexpat
 make -j8
 sudo make install
 ```
