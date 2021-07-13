@@ -1,4 +1,4 @@
-## Friday, 9nd July
+## Friday, 9th July
 * Started working on merging feature branches
 * Worked on implementing code in modular components itself
 
