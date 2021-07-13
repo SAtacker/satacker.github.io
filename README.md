@@ -1,5 +1,7 @@
 # Website
 
+[![GH Pages Deployment](https://github.com/SAtacker/satacker.github.io/actions/workflows/deploy_docusaurus.yml/badge.svg?branch=docusaurus-folio)](https://github.com/SAtacker/satacker.github.io/actions/workflows/deploy_docusaurus.yml)
+
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
