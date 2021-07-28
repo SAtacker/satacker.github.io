@@ -15,3 +15,4 @@ Proposal on eLinux can be found [here](https://elinux.org/BeagleBoard/GSoC/2021_
 ## [Week 5](gsoc-logs/week5)
 ## [Week 6](gsoc-logs/week6)
 ## [Week 7](gsoc-logs/week7)
+## [Week 8](gsoc-logs/week8)
