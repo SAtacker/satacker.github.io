@@ -1,6 +1,6 @@
 
 ## Fri, Jul 23
-* Upstream commit 09714c7a760d77304fc797d8b75e40e633723ab1
+* Upstream commit 09714c7a760d77304fc797d8b75e40e633723ab1 - [Link](https://github.com/SAtacker/beagle-config/pull/24/commits/09714c7a760d77304fc797d8b75e40e633723ab1)
 
 ## Sunday, Jul 25
 
@@ -37,5 +37,4 @@ Fixes:
 
 
 ## Wed, Jul 28
-
-    Added current status
+* [PR](https://github.com/SAtacker/beagle-config/pull/24)
