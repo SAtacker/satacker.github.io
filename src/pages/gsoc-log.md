@@ -16,3 +16,7 @@ Proposal on eLinux can be found [here](https://elinux.org/BeagleBoard/GSoC/2021_
 ## [Week 6](gsoc-logs/week6)
 ## [Week 7](gsoc-logs/week7)
 ## [Week 8](gsoc-logs/week8)
+## [Week 9](gsoc-logs/week9)
+## [Week 10](gsoc-logs/week10)
+## [Week 11](gsoc-logs/week11)
+<!-- ## [Week 12](gsoc-logs/week8) -->
