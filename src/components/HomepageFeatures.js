@@ -22,7 +22,7 @@ const FeatureList = [
     Svg: require("../../static/img/beagle_c.svg").default,
     description: (
       <>
-        On Going for GSoC '21 <hr></hr>
+        GSoC '21 <hr></hr>
         Beagle-Config lets you focus on your development, and it&apos;ll do the
         chores. Go ahead and configure your beagle device.
       </>
