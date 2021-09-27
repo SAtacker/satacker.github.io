@@ -1,0 +1,238 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+\tracingstats=0
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Shreyas Atre} \\ \vspace{1pt}
+    \small +91 7020418098 $|$ \href{mailto:shreyasatre16@gmail.com}{\underline{shreyasatre16@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/atreshreyas}{\underline{linkedin.com/in/atreshreyas}} $|$
+    \href{https://github.com/SAtacker}{\underline{github.com/SAtacker}} $|$
+    \href{https://satacker.github.io/}{\underline{https://satacker.github.io/}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Veermata Jijabai Technological Institute}{Mumbai, India}
+      {BTech. in Electronics and Telecommunications Engineering}{Aug. 2019 -- Aug. 2023}
+  \resumeSubHeadingListEnd
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CNCF and Linux Foundation Intern}{September 2021 -- November 2021}
+      {WasmEdge Runtime}{Remote}
+      \resumeItemListStart
+        \resumeItem{WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications.}
+        \resumeItem{ It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices.}
+        \resumeItem{Developed a C-Extension for the Python SDK that supports near native speeds.}
+        \resumeItem{Developed unit-tests and established benchmarks for the C-Extension of Python SDK.}
+        \resumeItem{Supported multiple operation modes of WasmEdge Runtime in C-Extension for Python-API.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Google Summer of Code}{June 2021 -- August 2021}
+      {BeagleBoard.org}{Remote}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a dashboard using FTXUI to aid the low level configurations in linux and some specifics to beaglebone boards using Modern CPP}
+        \resumeItem{Used userspace's IOCTL calls, Sockets for adding routes and deleting them.}
+        \resumeItem{Cross Compilation for ARM architecture using clang and gnu tool-chain and used build file generator CMake}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Munga Innovations}{March 2020 - June 2020}
+      {Embedded and AI intern}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{Developed a Image Classifier based on the Inception v3 for detection of unnecessary matter on Solar Panels, light enough to run on resource constrained systems.}
+        \resumeItem{Integrated the CNN on Rasp. PI 4 with Espressif's micro-controller ESP32 for the complete cleaning cycle of the cleaning bot.}
+        \resumeItem{Designed a back-end for the above mentioned cleaning process on ESP32 with integration to firebase using esp-idf API for client side web interface.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{DRV8305 Driver} $|$ \emph{C}}{August 2021 -- September 2021}
+            \resumeItemListStart
+                \resumeItem{Texas Instruments's DRV8305 has support for R/W of it's Control and Status Registers.}
+                \resumeItem{Implemented a driver for Espressif's ESP32 to establish Communication over SPI with R/W to the mentioned registers}
+                \resumeItem{Developed on top of freeRTOS and Esp-IDF tool-chain.}
+            \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{PID Tuning GUI Plotter} $|$ \emph{Qt, Modern C++}}{January 2021 -- March 2021}
+          \resumeItemListStart
+                \resumeItem{Developed a Cross Platform Application to plot and tune the PID Control parameters for Wall-E Robot}
+                \resumeItem{Used Boost ASIO for networking and Threads for concurrency, and Qt SIGNALS for internal Queue handling}
+                \resumeItem{Automated builds and Added material UI for the appearance and extensive documentation for the same.}
+          \resumeItemListEnd
+% \newpage % ---------------------------------------------------------
+      \resumeProjectHeading
+          {\textbf{Imitecio | Human Pose Estimation Based Application} $|$ \emph{Tensorflow 1.1x}}{June 2020 -- July 2020}
+          \resumeItemListStart
+                \resumeItem{Human Pose estimation has been around for a while and inspiration was taken from the same to make a game based on it.}
+                \resumeItem{Several CNN architectures along with various bottom-up and top-down approaches for devising the keypoints were studied and transfer learning on pre-trained models was accomplished.}
+                \resumeItem{Used Tensorflow Lite's Interpreter to get the keypoints from Google's PoseNet Model and mapped the same using OpenCV over the frames.}
+          \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+% ------------------------Responsibilities
+\section{Responsibilities}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Society of Robotics and Automation}{2019 -- Present}
+            {Software Head}{VJTI, India}
+            \resumeItemListStart
+            \resumeItem{Taught various robotics concepts including Motor Control using MCPWM unit on ESP32 for Self Balancing and Line Following Bot}
+            \resumeItem{Mentored Juniors for the Eklavya Summer Mentorship Program for projects like Audio Noise Reduction using Machine Learning based approaches, TUI for Email Client, Audio Router using Espressf's ESP32, etc.}
+            \resumeItem{Taught Convolution in Computer Vision and various advanced Python Programming Concepts and Computer Vision Modules like OpenCV.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\section{Competitions}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Eyantra Robotics Competition by IIT-B} $|$ \emph{ROS Melodic, Python 2,Drone}}{October 2020 -- March 2021}
+            \resumeItemListStart
+                \resumeItem{Successfully completed all the stages of Competition and Applied Control Systems on a UAV (Drone)}
+                \resumeItem{Featured HAAR Cascade using OpenCV for detection of landing markers and Implemented path planning algorithms and obstacle avoidance}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{SRA Auto Sim Competition} $|$ \emph{ROS Melodic, Python 2,Line Follower}}{December 2020}
+            \resumeItemListStart
+                \resumeItem{The competition consisted in implementing algorithm for Line Follower Bot and navigating through a series of puzzling areas which makes it much challenging.}
+                \resumeItem{Implemented PID Controller for which we were awarded II Prize.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++ (11, 14, 17), Python (2 \& 3), Bash \& Shell} \\
+     \textbf{Frameworks}{: Qt for Cross Platform Development, Build Systems and Toolkits, ML frameworks like PyTorch, TF, WebAssembly tools like WasmEdge} \\
+     \textbf{Developer Tools}{: Git, Docker, Singularity, freeRTOS, ROS, eLinux, ESP32, SBCs like BeagleBoard} \\
+     \textbf{Libraries}{: Boost ASIO, Boost Python, Python C extension API, FTXUI,  C++ Standard Headers}
+    }}
+ \end{itemize}
+    
+\end{document}
