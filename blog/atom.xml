@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://satacker.github.io/blog"/>
     <subtitle>Shreyas Atre Blog</subtitle>
-    <icon>https://satacker.github.io/img/favicon.ico</icon>
+    <icon>https://satacker.github.io/https://avatars.githubusercontent.com/u/61797109?v=4</icon>
     <entry>
         <title type="html"><![CDATA[DBus Cross-compilation]]></title>
         <id>dbus-crossc</id>

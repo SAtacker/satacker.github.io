@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgsoc_blog=self.webpackChunkgsoc_blog||[]).push([[4030],{78501:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/gsoc","name":"gsoc","count":1,"permalink":"/blog/tags/gsoc"}')}}]);

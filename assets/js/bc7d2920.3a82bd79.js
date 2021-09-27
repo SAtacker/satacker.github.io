@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgsoc_blog=self.webpackChunkgsoc_blog||[]).push([[1996],{15494:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/beagle","name":"beagle","count":2,"permalink":"/blog/tags/beagle"}')}}]);
