@@ -13,6 +13,10 @@
         <link href="https://satacker.github.io/blog/dbus-crossc"/>
         <updated>2021-06-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I have made a curated content on DBus cross-compilation on Ubuntu 20.04]]></summary>
+        <author>
+            <name>Shreyas Atre</name>
+            <uri>https://github.com/SAtacker</uri>
+        </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello]]></title>
@@ -20,6 +24,10 @@
         <link href="https://satacker.github.io/blog/hello-world"/>
         <updated>2021-06-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to this blog. This blog is created with Docusaurus 2 alpha.]]></summary>
+        <author>
+            <name>Shreyas Atre</name>
+            <uri>https://github.com/SAtacker</uri>
+        </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Pre-Coding Period]]></title>
@@ -27,6 +35,10 @@
         <link href="https://satacker.github.io/blog/pre-coding"/>
         <updated>2021-04-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Points to note]]></summary>
+        <author>
+            <name>Shreyas Atre</name>
+            <uri>https://github.com/SAtacker</uri>
+        </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Beaglebone & Linux]]></title>
@@ -34,5 +46,9 @@
         <link href="https://satacker.github.io/blog/linux_beagle"/>
         <updated>2021-01-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I have made a curated content on linux and beaglebone]]></summary>
+        <author>
+            <name>Shreyas Atre</name>
+            <uri>https://github.com/SAtacker</uri>
+        </author>
     </entry>
 </feed>
