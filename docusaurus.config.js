@@ -8,7 +8,7 @@ module.exports = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "https://avatars.githubusercontent.com/u/61797109?v=4",
   organizationName: "SAtacker", // Usually your GitHub org/user name.
   projectName: "satacker.github.io", // Usually your repo name.
   themeConfig: {
@@ -16,23 +16,23 @@ module.exports = {
       title: "Home",
       logo: {
         alt: "Home",
-        src: "img/logo.svg",
+        src: "https://avatars.githubusercontent.com/u/61797109?v=4",
       },
       items: [
         { to: "/blog", label: "Blog", position: "left" },
         { to: "/gsoc-log", label: "GSoC Log", position: "left" },
+        { to: "/resume", label: "Resume", position: "left" },
+        {
+          type: "doc",
+          docId: "intro",
+          position: "left",
+          label: "Notes",
+        },
         {
           to: "https://satacker.github.io/WasmEdge/",
           label: "PyWasmEdge",
           position: "left",
         },
-        { to: "/resume", label: "Resume", position: "left" },
-        // {
-        //   type: "doc",
-        //   docId: "intro",
-        //   position: "left",
-        //   label: "Docs",
-        // },
         {
           href: "https://github.com/SAtacker",
           label: "GitHub",
@@ -44,11 +44,15 @@ module.exports = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Notes",
           items: [
             {
-              label: "Tutorial",
+              label: "Intro",
               to: "/docs/intro",
+            },
+            {
+              label: "Linear-Algebra",
+              to: "/docs/linear-algebra/introduction",
             },
           ],
         },
@@ -83,7 +87,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()}`,
     },
   },
   presets: [
