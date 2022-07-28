@@ -13,7 +13,7 @@ Mentors (STE||AR Group @ LSU)
 
 ## Abstract
 
-HPX being up to date with Std C++ Proposals, Senders/Receivers were implemented as per P2300. But they have been missing coroutine (co_await) integration and minor functionalities as described in P2300 which is likely to be accepted. Hence I propose to implement these functionalities within the Core HPX Library. 
+HPX being up to date with Std C++ Proposals, Senders/Receivers were implemented as per P2300. But they have been missing coroutine (co_await) integration and minor functionalities as described in P2300 which is likely to be accepted. Hence I plan to implement these functionalities within the Core HPX Library. 
 - Benefits: 
     - Coroutines introduce better async code. For example, it is more readable, local variables have the same lifespan as the coroutine which means we don’t need to worry about allocation/release. 
     - S/R algorithms can work with coroutines which they cannot as of now unless relied on futures which as mentioned are single-time use. 
