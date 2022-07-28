@@ -1,6 +1,6 @@
 # Shreyas Atre
 <center>
-+91 7020418098 | [shreyasatre16@gmail.com](mailto:shreyasatre16@gmail.com) |linkedin.com/in/atreshreyas|github.com/SAtacker|
+linkedin.com/in/atreshreyas|github.com/SAtacker|
 https://satacker.github.io/
 </center>
 
