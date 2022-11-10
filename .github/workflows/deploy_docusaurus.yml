@@ -3,41 +3,35 @@ name: GH Pages Deployment
 on:
   push:
     branches: [ docusaurus-folio ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
-  build:
-
+  deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
 
-    - name: Set up Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm ci
+      - name: Build website
+        run: npm run build
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build
-      run: npm run build
-
-    - name: Deploy
-      run: |
-        git config --global user.name $user_name
-        git config --global user.email $user_email
-        git remote set-url origin https://${github_token}@github.com/${repository}
-        npm run deploy
-      env:
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-        repository: ${{ github.repository }}
+      # Popular action to deploy to GitHub Pages:
+      # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+          # Build output to publish to the `gh-pages` branch:
+          publish_dir: ./build
+          # The following lines assign commit authorship to the official
+          # GH-Actions bot for deploys to `gh-pages` branch:
+          # https://github.com/actions/checkout/issues/13#issuecomment-724415212
+          # The GH actions bot is used by default if you didn't specify the two fields.
+          # You can swap them out with your own user credentials.
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
