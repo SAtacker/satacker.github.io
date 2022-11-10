@@ -20,7 +20,7 @@ function HomepageHeader() {
           strings={[
             "Open Source Contributor",
             "Love for Math",
-            "Interested in Research (in broad areas)",
+            "Interested in Systems Research and Development",
           ]}
           typeSpeed={40}
           backSpeed={50}

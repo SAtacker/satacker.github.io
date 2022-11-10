@@ -5,11 +5,10 @@ import styles from "./HomepageFeatures.module.css";
 const FeatureList = [
   {
     title: "PID Tuning GUI",
-    link: "https://github.com/SAtacker/pid-tuning-gui",
+    link: "https://github.com/VedantParanjape/pid-tuning-gui",
     Svg: require("../../static/img/pid_tuning_gui.svg").default,
     description: (
       <>
-        Releasing Shortly
         <hr></hr>
         PID tuning GUI was designed from the ground up to be easily installed
         and used to get Wall-E bot tuned up and running quickly.
@@ -18,11 +17,10 @@ const FeatureList = [
   },
   {
     title: "Beagle-Config",
-    link: "https://github.com/SAtacker/beagle-config/tree/dev",
+    link: "https://github.com/SAtacker/bb-config",
     Svg: require("../../static/img/beagle_c.svg").default,
     description: (
       <>
-        GSoC '21 <hr></hr>
         Beagle-Config lets you focus on your development, and it&apos;ll do the
         chores. Go ahead and configure your beagle device.
       </>
