@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[8390],{1253:e=>{e.exports=JSON.parse('{"label":"beagle-config","permalink":"/blog/tags/beagle-config","allTagsPath":"/blog/tags","count":1}')}}]);
