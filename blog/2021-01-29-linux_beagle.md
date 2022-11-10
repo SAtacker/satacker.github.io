@@ -1,10 +1,7 @@
 ---
 slug: linux_beagle
 title: Beaglebone & Linux
-author: Shreyas Atre
-author_title: Student
-author_url: https://github.com/SAtacker
-author_image_url: https://avatars1.githubusercontent.com/u/61797109?v=4
+authors: [SAtacker]
 tags: [beagle, linux]
 ---
 
