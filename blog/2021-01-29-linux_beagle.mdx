@@ -176,4 +176,8 @@ satacker@ubuntu:~/Desktop$ ps ax | grep bash
 - If a foreground process is taking too much time, stop it by pressing Ctrl+Z. A stopped job still exists, but its execution is suspended. To resume the job, but in the background, type `bg` to send the stopped job to background execution. 
 - Linux from the shell supports just one active foreground process per virtual terminal. However, from the practical perspective of the user, a windowed environment (e.g., Linux with a desktop, not from a text-based shell) supports several active windows that effectively serve as multiple simultaneous foreground processes. In practice, Linux behind-the-scenes adjusts the priority of processes in a GUI to promote system stability and support end-user processing. [Source](https://www.lifewire.com/multitasking-background-foreground-process-2180219)
 
+import Comments from '../src/components/comments/Comments'
 
+----
+<Comments />
+----
