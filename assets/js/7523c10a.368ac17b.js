@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[3564],{3009:e=>{e.exports=JSON.parse('{"label":"GSoC","permalink":"/blog/tags/g-so-c","allTagsPath":"/blog/tags","count":1}')}}]);
