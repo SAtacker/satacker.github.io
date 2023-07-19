@@ -13,12 +13,15 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div>
-          <ul>
-            <li>Open Source Contributor</li>
-            <li>Systems Research and Development</li>
-          </ul>
-        </div>
+        <p>
+          Graduate Research Assistant
+        </p>
+        <p>
+          Member of <a href='https://stellar-group.org/' color='#f0f8ff' style={{ "color": "#0645AD" }} > STE||AR Group  </a>
+        </p>
+        <p>
+          Interested in Compilers and High Performance Computing
+        </p>
       </div>
     </header>
   );

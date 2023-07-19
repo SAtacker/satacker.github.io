@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Shreyas Atre",
-  tagline: "Learning forever",
+  tagline: "MSCS student @ LSU",
   url: "https://satacker.github.io",
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -62,17 +62,6 @@ const config = {
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/gsoc-log", label: "GSoC Log", position: "left" },
           { to: "/resume", label: "Resume", position: "left" },
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Notes",
-          },
-          {
-            to: "https://satacker.github.io/WasmEdge/",
-            label: "PyWasmEdge",
-            position: "left",
-          },
           {
             href: "https://github.com/SAtacker",
             label: "GitHub",

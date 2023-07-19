@@ -1,45 +1,63 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./HomepageFeatures.module.css";
+import { FixedSizeList as List } from 'react-window';
 
-const FeatureList = [
-  {
-    title: "PID Tuning GUI",
-    link: "https://github.com/VedantParanjape/pid-tuning-gui",
-    Svg: require("../../static/img/pid_tuning_gui.svg").default,
-    description: (
-      <>
-        <hr></hr>
-        PID tuning GUI was designed from the ground up to be easily installed
-        and used to get Wall-E bot tuned up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: "Beagle-Config",
-    link: "https://github.com/SAtacker/bb-config",
-    Svg: require("../../static/img/beagle_c.svg").default,
-    description: (
-      <>
-        Beagle-Config lets you focus on your development, and it&apos;ll do the
-        chores. Go ahead and configure your beagle device.
-      </>
-    ),
-  },
-  {
-    title: "Imitecio",
-    link: "https://github.com/SAtacker/IMITECIO",
-    Svg: require("../../static/img/imitecio.svg").default,
-    description: (
-      <>
-        Under SRA's Summer Mentorship
-        <hr></hr>
-        Pose Estimation has been for a while in the deep learning industry.
-        Considering the various applications of it, we aimed at creating a
-        simple game at first.
-      </>
-    ),
-  },
+const FeatureList = {
+  "2019-2021": [
+    {
+      title: "PID Tuning GUI",
+      link: "https://github.com/VedantParanjape/pid-tuning-gui",
+      Svg: require("../../static/img/pid_tuning_gui.svg").default,
+      description: (
+        <>
+          <hr></hr>
+          PID tuning GUI to get the Wall-E bot tuned up and running quickly.
+        </>
+      ),
+    },
+    {
+      title: "Beagle-Config",
+      link: "https://github.com/SAtacker/bb-config",
+      Svg: require("../../static/img/beagle_c.svg").default,
+      description: (
+        <>
+          <hr></hr>
+          Beagle-Config lets you to configure your beagle device.
+        </>
+      ),
+    },
+    {
+      title: "Imitecio",
+      link: "https://github.com/SAtacker/IMITECIO",
+      Svg: require("../../static/img/imitecio.svg").default,
+      description: (
+        <>
+          <hr></hr>
+          Pose Estimation based game controls
+        </>
+      ),
+    },
+  ]
+};
+
+
+
+const NewsList = [
+  "2023 : Enrolled in Fall 2023 Masters in Computer Science at Louisiana State University",
+  "2023 : Completed Electronics and Telecommunication Engg. course from VJTI, Mumbai",
+  "2022 : (October) Intern at STE||AR Group",
+  "2022 : (June) Intern at National Supercomputing Mission nodal center IIT Kharagpur",
+  "2022 : (Summer) Google Summer of Code contributor at STE||AR Group",
+  "2021 : (November) Intern at IIT Madras",
+  "2021 : (September) Intern at WasmEdge",
+  "2021 : (Summer) Google Summer of Code contributor at BeagleBoard.org",
+  "2020 : Completed in top 10 in Eyantra Robotics competition",
+  "2019 : Enrolled in Electronics and Telecommunication Engg. course VJTI, Mumbai",
+];
+
+const Publications = [
+  "None as of " + new Date().toDateString() + ", maybe in the near future",
 ];
 
 function Feature({ Svg, link, title, description }) {
@@ -58,22 +76,86 @@ function Feature({ Svg, link, title, description }) {
   );
 }
 
+const NewsRow = ({ index, style }) => (
+  <div style={style}>
+    <p align="left">
+      <p>
+        {NewsList[index]}
+      </p>
+    </p>
+  </div>
+);
+
+const PublicationsRow = ({ index, style }) => (
+  <div style={style}>
+    <p align="left">
+      <p>
+        {Publications[index]}
+      </p>
+    </p>
+  </div>
+);
+
+const NewsComponent = () => (
+  <div>
+    <div className="text--center">
+      <h2>News</h2>
+      Last updated: {new Date().toDateString()}
+    </div>
+    <hr></hr>
+    <div className="text--center">
+      <List
+        height={Object.keys(NewsList).length * 20}
+        itemCount={Object.keys(NewsList).length}
+        itemSize={35}
+      >
+        {NewsRow}
+      </List>
+    </div>
+  </div>
+);
+
+const PublicationsComponent = () => (
+  <div>
+    <div className="text--center">
+      <h2>Publications</h2>
+    </div>
+    <hr></hr>
+    <div className="text--center">
+      <List
+        height={Object.keys(Publications).length * 20}
+        itemCount={Object.keys(Publications).length}
+        itemSize={35}
+      >
+        {PublicationsRow}
+      </List>
+    </div>
+  </div>
+);
+
+
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        {NewsComponent()}
+        <hr></hr>
+        {PublicationsComponent()}
+        <hr></hr>
         <div className="text--center">
           <h2>Projects</h2>
         </div>
+        <div className="text--center">
+          View <a href="https://www.github.com/SAtacker">github</a>
+        </div>
+        <hr></hr>
+        <div className="text--center">
+          2019-2021
+        </div>
         <div className="row">
-          {FeatureList.map((props, idx) => (
+          {FeatureList["2019-2021"].map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
-        </div>
-        <div className="text--center">
-          <h3>
-            View <a href="https://www.github.com/SAtacker">github</a>
-          </h3>
         </div>
       </div>
     </section>
