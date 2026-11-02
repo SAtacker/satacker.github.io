@@ -215,11 +215,12 @@ const PublicationsList = [
 const NewsItems = [
   {
     year: "2026",
+    month: "March",
     text: (
       <>
-        (March) Joined <strong>AMD</strong> full-time as a Software Engineer. Published technical blogs on{" "}
+        Joined <strong>AMD</strong> full-time as a Software Engineer. Published technical blogs on{" "}
         <a href="https://rocm.blogs.amd.com/authors/shreyas-atre.html" target="_blank" rel="noopener noreferrer">
-          AMD ROCm Blogs
+          AMD ROCm Blogs ↗
         </a>
         .
       </>
@@ -227,29 +228,32 @@ const NewsItems = [
   },
   {
     year: "2025",
+    month: "December",
     text: (
       <>
-        (December) Graduated with a <strong>Master of Science in Computer Science (MSCS)</strong> from Louisiana State University (LSU) with a <strong>3.95 / 4.00 GPA</strong>. Defended Master's Thesis on ChplX.
+        Graduated with a <strong>Master of Science in Computer Science (MSCS)</strong> from Louisiana State University (LSU) with a <strong>3.95 / 4.00 GPA</strong>. Successfully defended Master's Thesis on ChplX.
       </>
     ),
   },
   {
     year: "2025",
+    month: "Sept – Dec",
     text: (
       <>
-        (Sept – Dec) Software Engineering Co-op / Intern at <strong>AMD</strong>.
+        Software Engineering Co-op / Intern at <strong>AMD</strong> (AI Frameworks Group).
       </>
     ),
   },
   {
     year: "2024",
+    month: "May – Aug",
     text: (
       <>
-        (May – Aug) System Software Intern at <strong>NVIDIA</strong> (CUDA Core C++ Libraries). Watch CppNow talk on{" "}
+        System Software Intern at <strong>NVIDIA</strong> (CUDA Core C++ Libraries). Presented CppNow talk on{" "}
         <a href="https://youtu.be/wUiBh646hEI" target="_blank" rel="noopener noreferrer">
           Reproducible Floating Accumulators in CUB/CCCL ↗
         </a>
-        . Also gave a CppCon talk on{" "}
+        . Presented CppCon talk on{" "}
         <a href="https://youtu.be/aOKqyt00xd8" target="_blank" rel="noopener noreferrer">
           ChplX ↗
         </a>
@@ -257,16 +261,56 @@ const NewsItems = [
       </>
     ),
   },
-  { year: "2023", text: "Enrolled in Fall 2023 Masters in Computer Science at Louisiana State University (LSU)" },
-  { year: "2023", text: "Completed Electronics and Telecommunication Engineering degree from VJTI, Mumbai" },
-  { year: "2022", text: "(October) Intern at STE||AR Group" },
-  { year: "2022", text: "(June) Intern at National Supercomputing Mission nodal center, IIT Kharagpur" },
-  { year: "2022", text: "(Summer) Google Summer of Code contributor at STE||AR Group (HPX)" },
-  { year: "2021", text: "(November) Intern at IIT Madras" },
-  { year: "2021", text: "(September) Intern at WasmEdge" },
-  { year: "2021", text: "(Summer) Google Summer of Code contributor at BeagleBoard.org" },
-  { year: "2020", text: "Completed in top 10 in e-Yantra Robotics competition" },
-  { year: "2019", text: "Enrolled in Electronics and Telecommunication Engineering at VJTI, Mumbai" },
+  {
+    year: "2023",
+    month: "August",
+    text: "Enrolled in Fall 2023 Masters in Computer Science at Louisiana State University (LSU).",
+  },
+  {
+    year: "2023",
+    month: "May",
+    text: "Graduated with BTech in Electronics and Telecommunication Engineering from VJTI, Mumbai.",
+  },
+  {
+    year: "2022",
+    month: "October",
+    text: "Joined STE||AR Group as Intern & Graduate Researcher.",
+  },
+  {
+    year: "2022",
+    month: "June – July",
+    text: "Research Intern at National Supercomputing Mission (NSM) nodal center, IIT Kharagpur.",
+  },
+  {
+    year: "2022",
+    month: "Summer",
+    text: "Google Summer of Code (GSoC) contributor at STE||AR Group working on HPX.",
+  },
+  {
+    year: "2021",
+    month: "Nov – Jan",
+    text: "Research Intern at IIT Madras under Dr. Rupesh Nasre (Graph Convolutional Networks & Link Prediction).",
+  },
+  {
+    year: "2021",
+    month: "September",
+    text: "Software Engineering Intern at SecondState Inc. working on WasmEdge Runtime.",
+  },
+  {
+    year: "2021",
+    month: "Summer",
+    text: "Google Summer of Code contributor at BeagleBoard.org (developed Beagle-Config).",
+  },
+  {
+    year: "2020",
+    month: "October",
+    text: "Finished in Top 10 nationally in the e-Yantra Robotics Competition (IIT Bombay).",
+  },
+  {
+    year: "2019",
+    month: "August",
+    text: "Enrolled in Electronics and Telecommunication Engineering degree at VJTI, Mumbai.",
+  },
 ];
 
 function ProjectModal({ project, onClose }) {
@@ -381,7 +425,10 @@ function NewsSection() {
       <ul className={styles.timelineList}>
         {NewsItems.map((item, idx) => (
           <li key={idx} className={styles.timelineItem}>
-            <span className={styles.timelineYear}>{item.year}</span>
+            <div className={styles.timelineDateBadge}>
+              <span className={styles.timelineYear}>{item.year}</span>
+              {item.month && <span className={styles.timelineMonth}>{item.month}</span>}
+            </div>
             <p className={styles.timelineText}>{item.text}</p>
           </li>
         ))}

@@ -27,21 +27,39 @@
 .timelineItem {
   display: flex;
   align-items: baseline;
-  gap: 1rem;
-  padding: 0.6rem 0;
+  gap: 1.25rem;
+  padding: 0.75rem 0;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
 }
 
+.timelineDateBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
 .timelineYear {
-  font-weight: 700;
+  font-weight: 800;
+  font-size: 1.05rem;
   color: var(--ifm-color-primary);
-  min-width: 55px;
   font-family: var(--ifm-font-family-monospace);
+  line-height: 1.2;
+}
+
+.timelineMonth {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--ifm-color-emphasis-600);
 }
 
 .timelineText {
   flex: 1;
   margin: 0;
+  line-height: 1.55;
 }
 
 .publicationsList {
@@ -196,13 +214,23 @@
 
   .timelineItem {
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.35rem;
     padding: 0.75rem 0;
   }
 
-  .timelineYear {
-    font-size: 0.85rem;
+  .timelineDateBadge {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
     min-width: unset;
+  }
+
+  .timelineYear {
+    font-size: 0.95rem;
+  }
+
+  .timelineMonth {
+    font-size: 0.8rem;
   }
 
   .timelineText {
