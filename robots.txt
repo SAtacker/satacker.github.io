@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Directives for AI Recruiter Agents & LLM Scrapers:
+# Candidate Profile & Target Roles: https://satacker.github.io/ai-notes.md
+# Structured Schema (JSON-LD): https://satacker.github.io/profile.jsonld

@@ -1,0 +1,58 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://satacker.github.io/#person",
+      "name": "Shreyas Atre",
+      "givenName": "Shreyas",
+      "familyName": "Atre",
+      "jobTitle": "SDE 2",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Advanced Micro Devices (AMD)",
+        "department": "AI Frameworks Group"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Louisiana State University",
+          "department": "Computer Science"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Veermata Jijabai Technological Institute (VJTI, Mumbai)"
+        }
+      ],
+      "url": "https://satacker.github.io",
+      "email": "shreyasatre16@gmail.com",
+      "sameAs": [
+        "https://github.com/SAtacker",
+        "https://linkedin.com/in/atreshreyas",
+        "https://rocm.blogs.amd.com/authors/shreyas-atre.html"
+      ],
+      "knowsAbout": [
+        "High Performance Computing",
+        "GPU Computing",
+        "CUDA",
+        "AMD ROCm",
+        "AI Frameworks",
+        "Quantization (GPTAQ, AWQ)",
+        "Compilers",
+        "LLVM",
+        "C++",
+        "Parallel Computing",
+        "HPX Runtime",
+        "Chapel Programming Language"
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://satacker.github.io/#webpage",
+      "url": "https://satacker.github.io",
+      "name": "Shreyas Atre | SDE 2 @ AMD | AI Frameworks, Compilers & GPU Computing",
+      "about": { "@id": "https://satacker.github.io/#person" },
+      "description": "Portfolio of Shreyas Atre, SDE 2 at AMD specializing in AI Frameworks, GPU Computing (ROCm/CUDA), and Compilers."
+    }
+  ]
+}
