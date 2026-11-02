@@ -25,6 +25,16 @@ const FeatureList = {
   ],
 };
 
+const PublicationsList = [
+  {
+    authors: "Atre, S., Taylor, C., Diehl, P., Kaiser, H.",
+    year: "2026",
+    title: "Closing a Source Complexity Gap Between Chapel and HPX",
+    venue: "In: Diehl, P., Cao, Q., Herault, T., Bosilca, G. (eds) Asynchronous Many-Task Systems and Applications. WAMTA 2025. Lecture Notes in Computer Science, vol 15690. Springer, Cham.",
+    doi: "https://doi.org/10.1007/978-3-031-97196-9_3",
+  },
+];
+
 const NewsItems = [
   { year: "2023", text: "Enrolled in Fall 2023 Masters in Computer Science at Louisiana State University (LSU)" },
   { year: "2023", text: "Completed Electronics and Telecommunication Engineering degree from VJTI, Mumbai" },
@@ -81,10 +91,21 @@ function PublicationsSection() {
     <div className={styles.sectionBlock}>
       <div className="text--center">
         <h2>Publications</h2>
-        <p className="margin-top--md" style={{ color: "var(--ifm-color-emphasis-700)" }}>
-          Coming soon in near future. Stay tuned!
-        </p>
       </div>
+      <ul className={styles.publicationsList}>
+        {PublicationsList.map((pub, idx) => (
+          <li key={idx} className={styles.publicationItem}>
+            <div>
+              {pub.authors} ({pub.year}). <strong>{pub.title}</strong>. {pub.venue}{' '}
+              {pub.doi && (
+                <a href={pub.doi} target="_blank" rel="noopener noreferrer">
+                  {pub.doi}
+                </a>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

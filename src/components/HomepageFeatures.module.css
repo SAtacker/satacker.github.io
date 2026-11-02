@@ -44,6 +44,29 @@
   margin: 0;
 }
 
+.publicationsList {
+  list-style: none;
+  padding: 0;
+  max-width: 850px;
+  margin: 1.5rem auto;
+  text-align: left;
+}
+
+.publicationItem {
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 6px;
+  background-color: var(--ifm-card-background-color);
+  line-height: 1.6;
+}
+
+.publicationTitle {
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
 .projectCard {
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 8px;
