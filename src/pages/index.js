@@ -13,15 +13,19 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p>Graduate Research Assistant</p>
         <p>
-          Graduate Research Assistant
+          Member of{' '}
+          <a
+            href="https://stellar-group.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#ffffff', textDecoration: 'underline', fontWeight: 600 }}
+          >
+            STE||AR Group
+          </a>
         </p>
-        <p>
-          Member of <a href='https://stellar-group.org/' color='#f0f8ff' style={{ "color": "#0645AD" }} > STE||AR Group  </a>
-        </p>
-        <p>
-          Interested in Compilers and High Performance Computing
-        </p>
+        <p>Interested in Compilers and High Performance Computing</p>
       </div>
     </header>
   );
@@ -31,8 +35,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.title}
+      description="Shreyas Atre - Graduate Research Assistant at LSU & STE||AR Group member specializing in Compilers, HPC, and Systems Programming.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

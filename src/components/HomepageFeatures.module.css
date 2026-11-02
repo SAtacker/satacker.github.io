@@ -8,6 +8,54 @@
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
+}
+
+.sectionBlock {
+  margin-bottom: 2.5rem;
+}
+
+.timelineList {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  text-align: left;
+}
+
+.timelineItem {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.timelineYear {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  min-width: 55px;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.timelineText {
+  flex: 1;
+  margin: 0;
+}
+
+.projectCard {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: var(--ifm-card-background-color);
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
