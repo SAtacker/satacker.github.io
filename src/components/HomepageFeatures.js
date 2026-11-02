@@ -10,7 +10,7 @@ const CurrentWork = [
     description:
       "Technical blogs and articles on GPU optimization, ROCm ecosystem, and modern GPU computing with AMD.",
     details: {
-      role: "Software Engineer at AMD (AI Frameworks Group)",
+      role: "SDE 2 at AMD (AI Frameworks Group)",
       highlights: [
         "Authored in-depth technical blogs and tutorials on the AMD ROCm ecosystem and modern GPU performance tuning.",
         "Focus on LLM quantization, layerwise loss minimization algorithms (GPTAQ), and deterministic profiling for AMD Quark.",
@@ -101,6 +101,24 @@ const UndergradProjects = [
       ],
       links: [
         { label: "LLVM Phabricator Review D144831", url: "https://reviews.llvm.org/D144831" },
+      ],
+    },
+  },
+  {
+    title: "Quick-FTXUI",
+    link: "https://github.com/SAtacker/quick-ftxui",
+    tags: ["C++", "TUI", "FTXUI", "Boost.Spirit", "DSL"],
+    description:
+      "A partial evaluator and interpreter language to generate terminal user interfaces (TUIs) using Boost Spirit for parsing and FTXUI for rendering.",
+    details: {
+      role: "Language & TUI Framework Creator",
+      highlights: [
+        "Engineered a domain-specific language (DSL) to design terminal user interfaces rapidly and declaratively.",
+        "Built a grammar parser and partial evaluator utilizing Boost Spirit on the front-end.",
+        "Integrated FTXUI as the rendering engine for reactive, styled console components.",
+      ],
+      links: [
+        { label: "GitHub: SAtacker/quick-ftxui", url: "https://github.com/SAtacker/quick-ftxui" },
       ],
     },
   },
@@ -218,7 +236,7 @@ const NewsItems = [
     month: "March",
     text: (
       <>
-        Joined <strong>AMD</strong> full-time as a Software Engineer. Published technical blogs on{" "}
+        Joined <strong>AMD</strong> full-time as an <strong>SDE 2</strong>. Published technical blogs on{" "}
         <a href="https://rocm.blogs.amd.com/authors/shreyas-atre.html" target="_blank" rel="noopener noreferrer">
           AMD ROCm Blogs ↗
         </a>

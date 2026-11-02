@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Shreyas Atre",
-  tagline: "Software Engineer @ AMD | MSCS from LSU",
+  tagline: "SDE 2 @ AMD | MSCS from LSU",
   url: "https://satacker.github.io",
   baseUrl: '/',
   onBrokenLinks: 'throw',

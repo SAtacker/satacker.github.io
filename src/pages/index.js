@@ -22,7 +22,7 @@ function HomepageHeader() {
         <p className={styles.heroSubtitle}>{siteConfig.tagline}</p>
         
         <p className={styles.heroBio}>
-          Software Engineer at <strong>AMD</strong> working on AI Frameworks & GPU Computing. Member of the{' '}
+          SDE 2 at <strong>AMD</strong> working on AI Frameworks & GPU Computing. Member of the{' '}
           <a
             href="https://stellar-group.org/"
             target="_blank"
@@ -72,7 +72,7 @@ export default function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Shreyas Atre - Software Engineer at AMD, MSCS from LSU (3.95/4.00 GPA), STE||AR Group member specializing in Compilers, ROCm, and High Performance Computing."
+      description="Shreyas Atre - SDE 2 at AMD, MSCS from LSU (3.95/4.00 GPA), STE||AR Group member specializing in Compilers, ROCm, and High Performance Computing."
     >
       <HomepageHeader />
       <main>
