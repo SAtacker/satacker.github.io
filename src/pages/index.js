@@ -13,7 +13,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p>Graduate Research Assistant</p>
+        <p>Software Engineer at AMD</p>
         <p>
           Member of{' '}
           <a
@@ -25,7 +25,18 @@ function HomepageHeader() {
             STE||AR Group
           </a>
         </p>
-        <p>Interested in Compilers and High Performance Computing</p>
+        <p>
+          Read my blogs on{' '}
+          <a
+            href="https://rocm.blogs.amd.com/authors/shreyas-atre.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#ffffff', textDecoration: 'underline', fontWeight: 600 }}
+          >
+            AMD ROCm Blogs
+          </a>
+        </p>
+        <p>Interested in Compilers, GPU Computing, and High Performance Computing</p>
       </div>
     </header>
   );
@@ -36,7 +47,7 @@ export default function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Shreyas Atre - Graduate Research Assistant at LSU & STE||AR Group member specializing in Compilers, HPC, and Systems Programming.">
+      description="Shreyas Atre - Software Engineer at AMD, MSCS from LSU (3.95/4.00 GPA), STE||AR Group member specializing in Compilers, ROCm, and High Performance Computing.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

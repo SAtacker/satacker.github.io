@@ -11,12 +11,22 @@ const GraduateProjects = [
       "A bridge and backend enabling interoperability between the productive Chapel parallel programming language and C++/HPX asynchronous task-based runtime.",
   },
   {
+    title: "AMD ROCm Technical Articles",
+    link: "https://rocm.blogs.amd.com/authors/shreyas-atre.html",
+    tags: ["ROCm", "GPU Computing", "AMD", "HPC", "Blogs"],
+    description:
+      "Technical blogs on GPU optimization, ROCm ecosystem, and modern GPU computing with AMD.",
+  },
+  {
     title: "HPX Contributions",
     link: "https://github.com/STEllAR-GROUP/hpx",
     tags: ["C++20", "Distributed", "Concurrency", "Futures"],
     description:
       "Contributions to the C++ Standard Library for Parallelism and Concurrency, focusing on asynchronous execution policies, futures, and modern C++ abstractions.",
   },
+];
+
+const UndergradProjects = [
   {
     title: "WasmEdge",
     link: "https://github.com/WasmEdge/WasmEdge",
@@ -24,9 +34,6 @@ const GraduateProjects = [
     description:
       "Work on high-performance, extensible WebAssembly runtime for serverless, edge computing, and cloud-native systems.",
   },
-];
-
-const UndergradProjects = [
   {
     title: "PID Tuning GUI",
     link: "https://github.com/VedantParanjape/pid-tuning-gui",
@@ -68,6 +75,42 @@ const PublicationsList = [
 ];
 
 const NewsItems = [
+  {
+    year: "2026",
+    text: (
+      <>
+        (March) Joined <strong>AMD</strong> full-time as a Software Engineer. Published technical blogs on{" "}
+        <a href="https://rocm.blogs.amd.com/authors/shreyas-atre.html" target="_blank" rel="noopener noreferrer">
+          AMD ROCm Blogs
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    year: "2025",
+    text: (
+      <>
+        (December) Graduated with a <strong>Master of Science in Computer Science (MSCS)</strong> from Louisiana State University (LSU) with a <strong>3.95 / 4.00 GPA</strong>. Defended Master's Thesis on ChplX.
+      </>
+    ),
+  },
+  {
+    year: "2025",
+    text: (
+      <>
+        (Sept – Dec) Software Engineering Co-op / Intern at <strong>AMD</strong>.
+      </>
+    ),
+  },
+  {
+    year: "2024",
+    text: (
+      <>
+        (May – Aug) System Software Intern at <strong>NVIDIA</strong>.
+      </>
+    ),
+  },
   { year: "2023", text: "Enrolled in Fall 2023 Masters in Computer Science at Louisiana State University (LSU)" },
   { year: "2023", text: "Completed Electronics and Telecommunication Engineering degree from VJTI, Mumbai" },
   { year: "2022", text: "(October) Intern at STE||AR Group" },
