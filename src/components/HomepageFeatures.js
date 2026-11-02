@@ -2,28 +2,53 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./HomepageFeatures.module.css";
 
-const FeatureList = {
-  "2019-2021": [
-    {
-      title: "PID Tuning GUI",
-      link: "https://github.com/VedantParanjape/pid-tuning-gui",
-      Svg: require("../../static/img/pid_tuning_gui.svg").default,
-      description: "PID tuning GUI to get the Wall-E bot tuned up and running quickly.",
-    },
-    {
-      title: "Beagle-Config",
-      link: "https://github.com/SAtacker/bb-config",
-      Svg: require("../../static/img/beagle_c.svg").default,
-      description: "Beagle-Config lets you easily configure your beagle device over USB.",
-    },
-    {
-      title: "Imitecio",
-      link: "https://github.com/SAtacker/IMITECIO",
-      Svg: require("../../static/img/imitecio.svg").default,
-      description: "Pose estimation based game controls powered by computer vision.",
-    },
-  ],
-};
+const GraduateProjects = [
+  {
+    title: "ChplX",
+    link: "https://github.com/SAtacker/chplx",
+    tags: ["Chapel", "C++", "HPX", "HPC", "Compiler"],
+    description:
+      "A bridge and backend enabling interoperability between the productive Chapel parallel programming language and C++/HPX asynchronous task-based runtime.",
+  },
+  {
+    title: "HPX Contributions",
+    link: "https://github.com/STEllAR-GROUP/hpx",
+    tags: ["C++20", "Distributed", "Concurrency", "Futures"],
+    description:
+      "Contributions to the C++ Standard Library for Parallelism and Concurrency, focusing on asynchronous execution policies, futures, and modern C++ abstractions.",
+  },
+  {
+    title: "WasmEdge",
+    link: "https://github.com/WasmEdge/WasmEdge",
+    tags: ["WebAssembly", "C++", "Runtime", "Systems"],
+    description:
+      "Work on high-performance, extensible WebAssembly runtime for serverless, edge computing, and cloud-native systems.",
+  },
+];
+
+const UndergradProjects = [
+  {
+    title: "PID Tuning GUI",
+    link: "https://github.com/VedantParanjape/pid-tuning-gui",
+    Svg: require("../../static/img/pid_tuning_gui.svg").default,
+    tags: ["Python", "GUI", "Robotics"],
+    description: "PID tuning GUI to get the Wall-E bot tuned up and running quickly.",
+  },
+  {
+    title: "Beagle-Config",
+    link: "https://github.com/SAtacker/bb-config",
+    Svg: require("../../static/img/beagle_c.svg").default,
+    tags: ["C++", "Embedded Linux", "USB"],
+    description: "Beagle-Config lets you easily configure your beagle device over USB.",
+  },
+  {
+    title: "Imitecio",
+    link: "https://github.com/SAtacker/IMITECIO",
+    Svg: require("../../static/img/imitecio.svg").default,
+    tags: ["Python", "Computer Vision", "Gaming"],
+    description: "Pose estimation based game controls powered by computer vision.",
+  },
+];
 
 const PublicationsList = [
   {
@@ -55,21 +80,32 @@ const NewsItems = [
   { year: "2019", text: "Enrolled in Electronics and Telecommunication Engineering at VJTI, Mumbai" },
 ];
 
-function Feature({ Svg, link, title, description }) {
+function ProjectCard({ Svg, link, title, description, tags }) {
   return (
     <div className={clsx("col col--4 margin-bottom--lg")}>
       <div className={styles.projectCard}>
-        <div className="text--center margin-bottom--md">
-          <Svg className={styles.featureSvg} alt={title} />
-        </div>
+        {Svg && (
+          <div className="text--center margin-bottom--md">
+            <Svg className={styles.featureSvg} alt={title} />
+          </div>
+        )}
         <div className="text--center">
-          <h3>
+          <h3 style={{ marginBottom: "0.5rem" }}>
             <a href={link} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
           </h3>
-          <p>{description}</p>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.5 }}>{description}</p>
         </div>
+        {tags && (
+          <div className={styles.tagsContainer}>
+            {tags.map((tag, i) => (
+              <span key={i} className={styles.tagBadge}>
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -97,13 +133,13 @@ function PublicationsSection() {
   return (
     <div className={styles.sectionBlock}>
       <div className="text--center">
-        <h2>Publications</h2>
+        <h2>Publications & Theses</h2>
       </div>
       <ul className={styles.publicationsList}>
         {PublicationsList.map((pub, idx) => (
           <li key={idx} className={styles.publicationItem}>
             <div>
-              {pub.authors} ({pub.year}). <strong>{pub.title}</strong>. {pub.venue}{' '}
+              {pub.authors} ({pub.year}). <strong>{pub.title}</strong>. {pub.venue}{" "}
               {pub.doi && (
                 <a href={pub.doi} target="_blank" rel="noopener noreferrer">
                   {pub.doi}
@@ -126,18 +162,31 @@ export default function HomepageFeatures() {
         <PublicationsSection />
         <hr className="margin-vert--lg" />
         <div className={styles.sectionBlock}>
-          <div className="text--center margin-bottom--md">
-            <h2>Featured Projects</h2>
+          <div className="text--center margin-bottom--lg">
+            <h2>Projects</h2>
             <p>
-              Check out my repositories on{" "}
+              Explore more repositories on{" "}
               <a href="https://github.com/SAtacker" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </p>
           </div>
+
+          <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-primary)" }}>
+            Graduate & Research Work
+          </h3>
+          <div className="row margin-bottom--lg">
+            {GraduateProjects.map((props, idx) => (
+              <ProjectCard key={idx} {...props} />
+            ))}
+          </div>
+
+          <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-emphasis-700)" }}>
+            Undergraduate Work (2019 – 2021)
+          </h3>
           <div className="row">
-            {FeatureList["2019-2021"].map((props, idx) => (
-              <Feature key={idx} {...props} />
+            {UndergradProjects.map((props, idx) => (
+              <ProjectCard key={idx} {...props} />
             ))}
           </div>
         </div>
