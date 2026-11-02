@@ -2,6 +2,16 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./HomepageFeatures.module.css";
 
+const CurrentWork = [
+  {
+    title: "AMD ROCm Technical Articles",
+    link: "https://rocm.blogs.amd.com/authors/shreyas-atre.html",
+    tags: ["ROCm", "GPU Computing", "AMD", "HPC", "Full-Time"],
+    description:
+      "Technical blogs and articles on GPU optimization, ROCm ecosystem, and modern GPU computing with AMD.",
+  },
+];
+
 const GraduateProjects = [
   {
     title: "ChplX",
@@ -9,13 +19,6 @@ const GraduateProjects = [
     tags: ["Chapel", "C++", "HPX", "HPC", "Compiler"],
     description:
       "A bridge and backend enabling interoperability between the productive Chapel parallel programming language and C++/HPX asynchronous task-based runtime.",
-  },
-  {
-    title: "AMD ROCm Technical Articles",
-    link: "https://rocm.blogs.amd.com/authors/shreyas-atre.html",
-    tags: ["ROCm", "GPU Computing", "AMD", "HPC", "Blogs"],
-    description:
-      "Technical blogs on GPU optimization, ROCm ecosystem, and modern GPU computing with AMD.",
   },
   {
     title: "HPX Contributions",
@@ -230,6 +233,15 @@ export default function HomepageFeatures() {
           </div>
 
           <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-primary)" }}>
+            Current Full-Time Work
+          </h3>
+          <div className="row margin-bottom--lg">
+            {CurrentWork.map((props, idx) => (
+              <ProjectCard key={idx} {...props} />
+            ))}
+          </div>
+
+          <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-primary-darker)" }}>
             Graduate & Research Work
           </h3>
           <div className="row margin-bottom--lg">
