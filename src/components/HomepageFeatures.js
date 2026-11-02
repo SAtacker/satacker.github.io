@@ -28,6 +28,13 @@ const GraduateProjects = [
 
 const UndergradProjects = [
   {
+    title: "Template Decl Lookup Optimization",
+    link: "https://reviews.llvm.org/D144831",
+    tags: ["LLVM", "Clang", "Modern C++", "Compilers"],
+    description:
+      "Optimized template specialization lookup for Clang modules by adding a lookup table in preambles, reducing complexity from O(n²) to O(n).",
+  },
+  {
     title: "WasmEdge",
     link: "https://github.com/WasmEdge/WasmEdge",
     tags: ["WebAssembly", "C++", "Runtime", "Systems"],
@@ -47,6 +54,13 @@ const UndergradProjects = [
     Svg: require("../../static/img/beagle_c.svg").default,
     tags: ["C++", "Embedded Linux", "USB"],
     description: "Beagle-Config lets you easily configure your beagle device over USB.",
+  },
+  {
+    title: "DRV8305 Driver",
+    link: "https://github.com/VedantParanjape/esp-idf-drv8305",
+    tags: ["C", "ESP32", "FreeRTOS", "SPI"],
+    description:
+      "Driver for Espressif's ESP32 to establish communication over SPI with R/W to configuration registers on top of FreeRTOS.",
   },
   {
     title: "Imitecio",
@@ -225,7 +239,7 @@ export default function HomepageFeatures() {
           </div>
 
           <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-emphasis-700)" }}>
-            Undergraduate Work (2019 – May 2023)
+            Undergraduate Work (2019 – 2023)
           </h3>
           <div className="row">
             {UndergradProjects.map((props, idx) => (

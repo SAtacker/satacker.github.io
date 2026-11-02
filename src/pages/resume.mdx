@@ -1,15 +1,89 @@
 # Resume
 
-<div style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+<div style={{ marginBottom: '1.5rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center' }}>
   <a
     className="button button--primary"
     href="https://drive.google.com/file/d/1EWwu3zZLjTSMOExnQkyIU1bXgqgjaryK/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
   >
-    Open in Google Drive ↗
+    Open PDF on Google Drive ↗
+  </a>
+  <a
+    className="button button--secondary"
+    href="https://github.com/SAtacker"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub Profile ↗
+  </a>
+  <a
+    className="button button--secondary"
+    href="https://linkedin.com/in/atreshreyas"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    LinkedIn ↗
   </a>
 </div>
+
+---
+
+## Summary
+- **Current Role**: Software Engineer at **AMD** (San Jose, CA).
+- **Education**: 
+  - **Louisiana State University (LSU)** — MS in Computer Science (**3.95 / 4.00 GPA**), Aug 2023 – Dec 2025.
+  - **Veermata Jijabai Technological Institute (VJTI, Mumbai)** — BTech in Electronics & Telecommunications Engineering, Aug 2019 – 2023.
+
+---
+
+## Experience
+
+### **AMD** — San Jose, CA
+**Software Engineer** *(March 2026 – Present)*  
+**Co-op / Intern — AI Frameworks Group** *(Sept 2025 – Dec 2025)*
+- Implementation of **GPTAQ for AMD-Quark**, evaluating and experimenting model performance for layerwise loss minimization algorithms across diverse calibration datasets and floating-point precisions.
+- Diagnosed unexpected non-deterministic behavior in **Qronos**, delivering methodological analysis and solutions to achieve run-to-run determinism for reproducibility and profiling Quark scaled fake quantize.
+- Author on [AMD ROCm Blogs](https://rocm.blogs.amd.com/authors/shreyas-atre.html).
+
+### **NVIDIA** — Santa Clara, CA
+**System Software Intern — CUDA Core C++ Libraries (CCCL)** *(May 2024 – August 2024)*
+- Integrated a **Reproducible Floating Accumulator** into the CUB API supporting GPU/device-wide reduction summation kernels ([PR #2234](https://github.com/NVIDIA/cccl/pull/2234)).
+- Optimized reduction performance using **NSight Compute** performance benchmarks by addressing bloated kernel sizes that induced instruction-cache (i-cache) misses.
+
+### **STE||AR Group & LSU CCT** — Baton Rouge, LA
+**Graduate Research Assistant** *(Oct 2022 – Sept 2023)*  
+**Graduate Teaching Assistant** *(Aug 2023 – May 2024, Sept 2024 – Aug 2025)*
+- Developed **ChplX**, a source-to-source transformer translating Chapel parallel programs into C++ targeting HPX as the asynchronous task runtime.
+- Enhanced performance of Chapel domains in ChplX using compile-time evaluation by **25%**.
+- Implemented C++ coroutine (`co_await`) integration with **Senders/Receivers in HPX** compliant with **P2300**.
+- Identified and fixed a bug in NVIDIA's C++ Standard P2300 reference library (`stdexec`) regarding promise type detection.
+- TA for CSC 3380 (OOP with C++) and CSC 4103 (Operating Systems).
+
+### **National Supercomputing Mission (NSM), IIT Kharagpur**
+**Research Intern** *(May 2022 – July 2022)*
+- Implemented a co-scheduling algorithm for concurrent DNN inference with runtime memory optimization on heterogeneous CPU-GPU clusters.
+- Achieved up to **20% runtime memory reduction**, outperforming TensorFlow Lite and contemporary SoTA baselines.
+
+### **IIT Madras**
+**Research Intern** *(Nov 2021 – Jan 2022)*
+- Implemented Graph Convolutional Layers using PyTorch Geometric Message Passing Interface; quantified link prediction performance against GCN, GraphSAGE, Node2Vec, and heuristics on large graphs.
+
+### **BeagleBoard.org**
+**Google Summer of Code Contributor** *(June 2021 – August 2021)*
+- Designed Beagle-Config dashboard using FTXUI, modern C++, userspace IOCTL calls, and sockets for low-level board configuration. Cross-compiled for ARM architectures via CMake and LLVM/Clang.
+- **GSoC Mentor** for BeagleBoard.org and STE||AR Group since 2022.
+
+---
+
+## Technical Skills
+- **Languages**: C, C++ (C++17/20/23), CUDA, Python, Chapel, Shell/Bash, CMake, Make
+- **Systems & Frameworks**: HPX, LLVM/Clang, ROCm, PyTorch, CUB/CCCL, Linux Internals, FreeRTOS
+- **Coursework**: Compiler Construction (A), Programming Languages (A+), Advanced Operating Systems (A), PL Structures (A-)
+
+---
+
+## Embedded Preview
 
 <iframe
   src="https://drive.google.com/file/d/1EWwu3zZLjTSMOExnQkyIU1bXgqgjaryK/preview"
