@@ -33,6 +33,13 @@ const PublicationsList = [
     venue: "In: Diehl, P., Cao, Q., Herault, T., Bosilca, G. (eds) Asynchronous Many-Task Systems and Applications. WAMTA 2025. Lecture Notes in Computer Science, vol 15690. Springer, Cham.",
     doi: "https://doi.org/10.1007/978-3-031-97196-9_3",
   },
+  {
+    authors: "Atre, Shreyas Swanand",
+    year: "2025",
+    title: "ChplX: The HPX Solution for Bridging Chapel and C++",
+    venue: "LSU Master's Theses. 6227.",
+    doi: "https://repository.lsu.edu/gradschool_theses/6227",
+  },
 ];
 
 const NewsItems = [
