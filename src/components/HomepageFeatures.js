@@ -419,20 +419,23 @@ function ProjectCard({ Svg, link, title, description, tags, details, onSelect })
 function NewsSection() {
   return (
     <div className={styles.sectionBlock}>
-      <div className="text--center">
-        <h2>News & Milestones</h2>
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionTitle}>News & Milestones</h2>
+        <p className={styles.sectionSubtitle}>Career trajectory, education, internships, and key achievements</p>
       </div>
-      <ul className={styles.timelineList}>
-        {NewsItems.map((item, idx) => (
-          <li key={idx} className={styles.timelineItem}>
-            <div className={styles.timelineDateBadge}>
-              <span className={styles.timelineYear}>{item.year}</span>
-              {item.month && <span className={styles.timelineMonth}>{item.month}</span>}
-            </div>
-            <p className={styles.timelineText}>{item.text}</p>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.timelineContainer}>
+        <ul className={styles.timelineList}>
+          {NewsItems.map((item, idx) => (
+            <li key={idx} className={styles.timelineItem}>
+              <div className={styles.timelineDateBadge}>
+                <span className={styles.timelineYear}>{item.year}</span>
+                {item.month && <span className={styles.timelineMonth}>{item.month}</span>}
+              </div>
+              <p className={styles.timelineText}>{item.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
@@ -440,8 +443,9 @@ function NewsSection() {
 function PublicationsSection() {
   return (
     <div className={styles.sectionBlock}>
-      <div className="text--center">
-        <h2>Publications & Theses</h2>
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionTitle}>Publications & Theses</h2>
+        <p className={styles.sectionSubtitle}>Peer-reviewed papers, Master's thesis, and technical articles</p>
       </div>
       <ul className={styles.publicationsList}>
         {PublicationsList.map((pub, idx) => (
@@ -468,21 +472,16 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <NewsSection />
-        <hr className="margin-vert--lg" />
         <PublicationsSection />
-        <hr className="margin-vert--lg" />
         <div className={styles.sectionBlock}>
-          <div className="text--center margin-bottom--lg">
-            <h2>Projects</h2>
-            <p>
-              Explore more repositories on{" "}
-              <a href="https://github.com/SAtacker" target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>Projects & Open Source</h2>
+            <p className={styles.sectionSubtitle}>
+              Systems programming, runtimes, and compiler projects. Click cards for details.
             </p>
           </div>
 
-          <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-primary)" }}>
+          <h3 className={styles.subCategoryTitle} style={{ color: "var(--ifm-color-primary)" }}>
             Current Full-Time Work
           </h3>
           <div className="row margin-bottom--lg">
@@ -491,7 +490,7 @@ export default function HomepageFeatures() {
             ))}
           </div>
 
-          <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-primary-darker)" }}>
+          <h3 className={styles.subCategoryTitle} style={{ color: "var(--ifm-color-primary-darker)" }}>
             Graduate & Research Work
           </h3>
           <div className="row margin-bottom--lg">
@@ -500,7 +499,7 @@ export default function HomepageFeatures() {
             ))}
           </div>
 
-          <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-emphasis-700)" }}>
+          <h3 className={styles.subCategoryTitle} style={{ color: "var(--ifm-color-emphasis-700)" }}>
             Undergraduate Work (2019 – 2023)
           </h3>
           <div className="row">
