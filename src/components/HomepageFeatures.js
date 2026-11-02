@@ -21,6 +21,13 @@ const GraduateProjects = [
       "A bridge and backend enabling interoperability between the productive Chapel parallel programming language and C++/HPX asynchronous task-based runtime.",
   },
   {
+    title: "Reproducible Floating Accumulator (RFA) in CCCL",
+    link: "https://youtu.be/wUiBh646hEI",
+    tags: ["CUDA", "C++", "NVIDIA", "CCCL", "Talk / Demo"],
+    description:
+      "Integrated RFA into CUB/CCCL for reproducible GPU device-wide reduction summation kernels (watch video presentation).",
+  },
+  {
     title: "HPX Contributions",
     link: "https://github.com/STEllAR-GROUP/hpx",
     tags: ["C++20", "Distributed", "Concurrency", "Futures"],
@@ -124,7 +131,11 @@ const NewsItems = [
     year: "2024",
     text: (
       <>
-        (May – Aug) System Software Intern at <strong>NVIDIA</strong>.
+        (May – Aug) System Software Intern at <strong>NVIDIA</strong> (CUDA Core C++ Libraries). Watch presentation on{" "}
+        <a href="https://youtu.be/wUiBh646hEI" target="_blank" rel="noopener noreferrer">
+          Reproducible Floating Accumulators in CUB/CCCL ↗
+        </a>
+        .
       </>
     ),
   },
