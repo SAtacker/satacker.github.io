@@ -92,7 +92,7 @@ const config = {
               },
               {
                 label: "AI Agent Notes",
-                to: "/ai-notes.md",
+                to: "/ai-notes",
               },
               {
                 label: "GitHub",
