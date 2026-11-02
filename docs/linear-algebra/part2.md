@@ -33,7 +33,7 @@ $$
 
 ### Cholesky Factorization
 
-When $\mathbf{A} \in \mathbb{R}^{n \times n}$ is Symmetric Positive Definite ($\mathbf{A} = \mathbf{A}^T$ and $\mathbf{x}^T \mathbf{A} \mathbf{x} > 0 \; \forall \mathbf{x} \neq \mathbf{0}$), $\mathbf{A}$ factors uniquely into:
+When $\mathbf{A} \in \mathbb{R}^{n \times n}$ is Symmetric Positive Definite ($\mathbf{A} = \mathbf{A}^T$ and $\mathbf{x}^T \mathbf{A} \mathbf{x} \gt 0 \; \forall \mathbf{x} \neq \mathbf{0}$), $\mathbf{A}$ factors uniquely into:
 
 $$
 \mathbf{A} = \mathbf{L}\mathbf{L}^T
@@ -42,7 +42,7 @@ $$
 where $\mathbf{L}$ is a lower-triangular matrix with strictly positive diagonal elements:
 
 $$
-l_{jj} = \sqrt{a_{jj} - \sum_{k=1}^{j-1} l_{jk}^2}, \qquad l_{ij} = \frac{1}{l_{jj}} \left( a_{ij} - \sum_{k=1}^{j-1} l_{ik} l_{jk} \right) \quad (i > j)
+l_{jj} = \sqrt{a_{jj} - \sum_{k=1}^{j-1} l_{jk}^2}, \qquad l_{ij} = \frac{1}{l_{jj}} \left( a_{ij} - \sum_{k=1}^{j-1} l_{ik} l_{jk} \right) \quad (i \gt j)
 $$
 
 **Computational Cost**: $\frac{1}{3} n^3$ FLOPs ($\approx \frac{1}{6} n^3$ multiply-adds), exactly half the cost of LU factorization. Pivoting is not required for numerical stability.
@@ -61,11 +61,11 @@ $$
 - $\mathbf{R} \in \mathbb{R}^{m \times n}$ (full) or $\mathbb{R}^{n \times n}$ (thin): Upper-triangular matrix.
 
 #### Numerical Implementations
-1. **Householder Reflections**: Applies orthogonal reflectors $\mathbf{H}_k = \mathbf{I} - 2 \frac{\mathbf{v}_k \mathbf{v}_k^T}{\mathbf{v}_k^T \mathbf{v}_k}$ to annihilate subdiagonal columns. Cost: $2n^2(m - \frac{n}{3})$ FLOPs. Numerically backward stable.
+1. **Householder Reflections**: Applies orthogonal reflectors $\mathbf{H}_k = \mathbf{I} - 2 \frac{\mathbf{v}_k \mathbf{v}_k^T}{\mathbf{v}_k^T \mathbf{v}_k}$ to annihilate subdiagonal columns. Cost: $2n^2(m - n/3)$ FLOPs. Numerically backward stable.
 2. **Givens Rotations**: Applies $2 \times 2$ orthogonal rotations to eliminate specific non-zero elements. Ideal for banded or sparse structures.
 
 #### Linear Least Squares
-To solve $\min_{\mathbf{x}} \|\mathbf{A}\mathbf{x} - \mathbf{b}\|_2$:
+To solve $\min_{\mathbf{x}} \Vert \mathbf{A}\mathbf{x} - \mathbf{b} \Vert_2$:
 
 $$
 \mathbf{R}\mathbf{x} = \mathbf{Q}_1^T \mathbf{b}
@@ -105,7 +105,7 @@ $$
 $$
 
 - $\mathbf{U} \in \mathbb{R}^{m \times m}$: Orthogonal matrix whose columns are eigenvectors of $\mathbf{A}\mathbf{A}^T$.
-- $\mathbf{\Sigma} \in \mathbb{R}^{m \times n}$: Diagonal matrix of ordered singular values $\sigma_1 \ge \sigma_2 \ge \dots \ge \sigma_r > 0$.
+- $\mathbf{\Sigma} \in \mathbb{R}^{m \times n}$: Diagonal matrix of ordered singular values $\sigma_1 \ge \sigma_2 \ge \dots \ge \sigma_r \gt 0$.
 - $\mathbf{V} \in \mathbb{R}^{n \times n}$: Orthogonal matrix whose columns are eigenvectors of $\mathbf{A}^T \mathbf{A}$.
 
 The vectors satisfy the mapping relations:
@@ -115,7 +115,7 @@ $$
 $$
 
 #### Low-Rank Approximation (Eckart-Young-Mirsky Theorem)
-The truncated rank-$k$ approximation ($k < r$):
+The truncated rank-$k$ approximation ($k \lt r$):
 
 $$
 \mathbf{A}_k = \sum_{i=1}^k \sigma_i \mathbf{u}_i \mathbf{v}_i^T
@@ -124,11 +124,11 @@ $$
 minimizes the approximation error over all matrices of rank at most $k$:
 
 $$
-\min_{\text{rank}(\mathbf{B}) \le k} \|\mathbf{A} - \mathbf{B}\|_2 = \|\mathbf{A} - \mathbf{A}_k\|_2 = \sigma_{k+1}
+\min_{\text{rank}(\mathbf{B}) \le k} \Vert \mathbf{A} - \mathbf{B} \Vert_2 = \Vert \mathbf{A} - \mathbf{A}_k \Vert_2 = \sigma_{k+1}
 $$
 
 $$
-\min_{\text{rank}(\mathbf{B}) \le k} \|\mathbf{A} - \mathbf{B}\|_F = \|\mathbf{A} - \mathbf{A}_k\|_F = \sqrt{\sum_{i=k+1}^{\min(m, n)} \sigma_i^2}
+\min_{\text{rank}(\mathbf{B}) \le k} \Vert \mathbf{A} - \mathbf{B} \Vert_F = \Vert \mathbf{A} - \mathbf{A}_k \Vert_F = \sqrt{\sum_{i=k+1}^{\min(m, n)} \sigma_i^2}
 $$
 
 ---

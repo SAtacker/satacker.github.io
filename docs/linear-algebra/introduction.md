@@ -24,7 +24,7 @@ $$
 The Cauchy-Schwarz inequality bounds the inner product:
 
 $$
-|\mathbf{x}^T \mathbf{y}| \le \|\mathbf{x}\|_2 \|\mathbf{y}\|_2
+|\mathbf{x}^T \mathbf{y}| \le \Vert \mathbf{x} \Vert_2 \Vert \mathbf{y} \Vert_2
 $$
 
 with equality if and only if $\mathbf{x}$ and $\mathbf{y}$ are linearly dependent. Two vectors are orthogonal ($\mathbf{x} \perp \mathbf{y}$) when $\mathbf{x}^T \mathbf{y} = 0$.
@@ -32,9 +32,9 @@ with equality if and only if $\mathbf{x}$ and $\mathbf{y}$ are linearly dependen
 ### Vector Norms
 For $\mathbf{x} \in \mathbb{R}^n$, the standard $p$-norms are:
 
-- **$L_1$ Norm**: $\|\mathbf{x}\|_1 = \sum_{i=1}^n |x_i|$
-- **$L_2$ Norm**: $\|\mathbf{x}\|_2 = \sqrt{\mathbf{x}^T \mathbf{x}} = \sqrt{\sum_{i=1}^n x_i^2}$
-- **$L_\infty$ Norm**: $\|\mathbf{x}\|_\infty = \max_{1 \le i \le n} |x_i|$
+- **$L_1$ Norm**: $\Vert \mathbf{x} \Vert_1 = \sum_{i=1}^n |x_i|$
+- **$L_2$ Norm**: $\Vert \mathbf{x} \Vert_2 = \sqrt{\mathbf{x}^T \mathbf{x}} = \sqrt{\sum_{i=1}^n x_i^2}$
+- **$L_\infty$ Norm**: $\Vert \mathbf{x} \Vert_\infty = \max_{1 \le i \le n} |x_i|$
 
 ---
 
@@ -68,7 +68,7 @@ $$
 | :--- | :--- | :--- |
 | **Symmetric** | $\mathbf{A} = \mathbf{A}^T$ | Real eigenvalues; admitting an orthonormal eigenbasis. |
 | **Orthogonal** | $\mathbf{Q} \in \mathbb{R}^{n \times n}, \; \mathbf{Q}^T \mathbf{Q} = \mathbf{I}$ | Isometry: $\Vert \mathbf{Q}\mathbf{x} \Vert_2 = \Vert \mathbf{x} \Vert_2$; condition number $\kappa(\mathbf{Q}) = 1$. |
-| **Symmetric Positive Definite (SPD)** | $\mathbf{A} = \mathbf{A}^T, \; \mathbf{x}^T \mathbf{A} \mathbf{x} > 0 \; \forall \mathbf{x} \neq \mathbf{0}$ | Strictly positive real eigenvalues ($\lambda_i > 0$); admits unique Cholesky factorization. |
+| **Symmetric Positive Definite (SPD)** | $\mathbf{A} = \mathbf{A}^T, \; \mathbf{x}^T \mathbf{A} \mathbf{x} \gt 0 \; \forall \mathbf{x} \neq \mathbf{0}$ | Strictly positive real eigenvalues ($\lambda_i \gt 0$); admits unique Cholesky factorization. |
 | **Unitary** (Complex) | $\mathbf{U} \in \mathbb{C}^{n \times n}, \; \mathbf{U}^* \mathbf{U} = \mathbf{I}$ | Preserves inner products in $\mathbb{C}^n$. |
 
 ---
@@ -78,24 +78,24 @@ $$
 ### Norms
 - **Frobenius Norm**:
   $$
-  \|\mathbf{A}\|_F = \sqrt{\sum_{i=1}^m \sum_{j=1}^n a_{ij}^2} = \sqrt{\text{tr}(\mathbf{A}^T \mathbf{A})}
+  \Vert \mathbf{A} \Vert_F = \sqrt{\sum_{i=1}^m \sum_{j=1}^n a_{ij}^2} = \sqrt{\text{tr}(\mathbf{A}^T \mathbf{A})}
   $$
 - **Induced 2-Norm (Spectral Norm)**:
   $$
-  \|\mathbf{A}\|_2 = \sup_{\mathbf{x} \neq \mathbf{0}} \frac{\|\mathbf{A}\mathbf{x}\|_2}{\|\mathbf{x}\|_2} = \sigma_{\max}(\mathbf{A})
+  \Vert \mathbf{A} \Vert_2 = \sup_{\mathbf{x} \neq \mathbf{0}} \frac{\Vert \mathbf{A}\mathbf{x} \Vert_2}{\Vert \mathbf{x} \Vert_2} = \sigma_{\max}(\mathbf{A})
   $$
 
 ### Condition Number
 For invertible $\mathbf{A} \in \mathbb{R}^{n \times n}$, the 2-norm condition number is:
 
 $$
-\kappa(\mathbf{A}) = \|\mathbf{A}\|_2 \|\mathbf{A}^{-1}\|_2 = \frac{\sigma_{\max}(\mathbf{A})}{\sigma_{\min}(\mathbf{A})}
+\kappa(\mathbf{A}) = \Vert \mathbf{A} \Vert_2 \Vert \mathbf{A}^{-1} \Vert_2 = \frac{\sigma_{\max}(\mathbf{A})}{\sigma_{\min}(\mathbf{A})}
 $$
 
 When solving $\mathbf{A}\mathbf{x} = \mathbf{b}$, relative perturbations in data propagate according to:
 
 $$
-\frac{\|\delta \mathbf{x}\|}{\|\mathbf{x}\|} \le \kappa(\mathbf{A}) \left( \frac{\|\delta \mathbf{A}\|}{\|\mathbf{A}\|} + \frac{\|\delta \mathbf{b}\|}{\|\mathbf{b}\|} \right)
+\frac{\Vert \delta \mathbf{x} \Vert}{\Vert \mathbf{x} \Vert} \le \kappa(\mathbf{A}) \left( \frac{\Vert \delta \mathbf{A} \Vert}{\Vert \mathbf{A} \Vert} + \frac{\Vert \delta \mathbf{b} \Vert}{\Vert \mathbf{b} \Vert} \right)
 $$
 
 ---

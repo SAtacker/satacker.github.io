@@ -23,16 +23,6 @@ const config = {
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
-  stylesheets: [
-    {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
-      integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQTSwod2BmnUxe28S8559PqE9Rh57CSqE4WC64Mt',
-      crossorigin: 'anonymous',
-    },
-  ],
-
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
