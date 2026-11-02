@@ -40,7 +40,7 @@ const config = {
         blog: {
           showReadingTime: true,
           editUrl:
-            "https://github.comSAtacker/satacker.github.io/edit/main/blog/",
+            "https://github.com/SAtacker/satacker.github.io/edit/main/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

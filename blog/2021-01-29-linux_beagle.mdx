@@ -15,7 +15,7 @@ I have made a curated content on linux and beaglebone
 
 Power On
 
-1. (First Stage bootloader) TI Boot ROM performs minimal congfig, finds boot image and loads x-loader
+1. (First Stage bootloader) TI Boot ROM performs minimal config, finds boot image and loads x-loader
 
    - This bootloader initializes a minimal amount of CPU and board hardware, then accesses the first partition of the SD card (which must be in FAT format), and loads a file called "MLO", and executes it.
 
@@ -154,11 +154,15 @@ From [wikipedia](https://en.wikipedia.org/wiki/Hard_link)
 
 ### Users and Groups
 
-TODO
+- Linux manages permissions through users and groups. Each user belongs to a primary group and can belong to multiple supplementary groups.
+- User accounts and group information are stored in `/etc/passwd` and `/etc/group`.
+- Commands such as `whoami`, `id`, `groups`, and `sudo` help inspect and elevate privileges.
 
-### Commands
+### Common Commands
 
-TOD
+- Navigation & files: `ls`, `cd`, `pwd`, `cp`, `mv`, `rm`, `mkdir`
+- Viewing contents: `cat`, `less`, `head`, `tail`, `grep`
+- Permissions: `chmod`, `chown`
 
 ### Processes
 
