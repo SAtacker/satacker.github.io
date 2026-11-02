@@ -61,6 +61,12 @@ const config = {
           src: "https://avatars.githubusercontent.com/u/61797109?v=4",
         },
         items: [
+          {
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Notes",
+          },
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/gsoc-log", label: "GSoC Log", position: "left" },
           { to: "/resume", label: "Resume", position: "left" },
@@ -75,11 +81,19 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Notes",
+            title: "Notes & Docs",
             items: [
               {
-                label: "Intro",
+                label: "All Notes",
                 to: "/docs/intro",
+              },
+              {
+                label: "C++ & HPX Notes",
+                to: "/docs/c++/GSoC-HPX",
+              },
+              {
+                label: "Quick FTXUI",
+                to: "/docs/quick-ftxui/flex",
               },
             ],
           },

@@ -53,6 +53,9 @@ function HomepageHeader() {
           <Link className={styles.actionBtnSecondary} to="/resume">
             View Resume 📄
           </Link>
+          <Link className={styles.actionBtnSecondary} to="/docs/intro">
+            Technical Notes 📚
+          </Link>
           <a
             className={styles.actionBtnSecondary}
             href="https://github.com/SAtacker"
