@@ -91,6 +91,10 @@ const config = {
                 to: "/blog",
               },
               {
+                label: "AI Agent Notes",
+                to: "/ai-notes.md",
+              },
+              {
                 label: "GitHub",
                 href: "https://github.com/SAtacker",
               },
