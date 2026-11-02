@@ -225,7 +225,7 @@ export default function HomepageFeatures() {
           </div>
 
           <h3 className="margin-bottom--md" style={{ color: "var(--ifm-color-emphasis-700)" }}>
-            Undergraduate Work (2019 – 2021)
+            Undergraduate Work (2019 – May 2023)
           </h3>
           <div className="row">
             {UndergradProjects.map((props, idx) => (
