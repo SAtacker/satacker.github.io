@@ -36,10 +36,10 @@ const UndergradProjects = [
   },
   {
     title: "WasmEdge",
-    link: "https://github.com/WasmEdge/WasmEdge",
+    link: "https://github.com/WasmEdge/WasmEdge/issues?q=author%3ASAtacker",
     tags: ["WebAssembly", "C++", "Runtime", "Systems"],
     description:
-      "Work on high-performance, extensible WebAssembly runtime for serverless, edge computing, and cloud-native systems.",
+      "Contributions to WasmEdge Runtime: C/C++ Python SDK extension with near-native speeds, unit-tests, benchmarks, and multi-mode support.",
   },
   {
     title: "PID Tuning GUI",
