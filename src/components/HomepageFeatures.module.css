@@ -187,3 +187,46 @@
   background-color: var(--ifm-color-emphasis-200);
   color: var(--ifm-color-emphasis-800);
 }
+
+/* Mobile & Tablet Optimizations */
+@media screen and (max-width: 768px) {
+  .features {
+    padding: 1rem 0;
+  }
+
+  .timelineItem {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 0;
+  }
+
+  .timelineYear {
+    font-size: 0.85rem;
+    min-width: unset;
+  }
+
+  .timelineText {
+    font-size: 0.95rem;
+  }
+
+  .publicationItem {
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .modalContent {
+    padding: 1.25rem;
+    max-height: 90vh;
+    border-radius: 8px;
+    width: 95%;
+  }
+
+  .projectCard {
+    padding: 1.15rem;
+  }
+
+  .featureSvg {
+    height: 140px;
+    width: 140px;
+  }
+}
